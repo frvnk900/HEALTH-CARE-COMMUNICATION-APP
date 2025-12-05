@@ -1,0 +1,361 @@
+/* --- CSS VARIABLES & FONTS --- */
+:root {
+  --color-primary: #13ec6d;
+  --color-background-light: #f6f8f7;
+  --color-background-dark: #102218;
+  --color-text-light: #ffffff;
+  --color-text-secondary: rgba(255, 255, 255, 0.7);
+  --color-text-muted: rgba(255, 255, 255, 0.4);
+  --color-border: rgba(255, 255, 255, 0.1);
+  --color-red: #f87171;
+  --radius-default: 0.25rem;
+  --radius-lg: 0.5rem;
+  --radius-xl: 0.75rem;
+}
+
+@import url('https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@300..700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&display=swap');
+
+.font-display {
+  font-family: 'Space Grotesk', sans-serif;
+}
+
+.material-symbols-outlined {
+  font-variation-settings: 'FILL' 0, 'wght' 400, 'GRAD' 0, 'opsz' 24;
+}
+
+/* --- RESET --- */
+html, body {
+  margin: 0;
+  padding: 0;
+  height: 100%;
+  width: 100%;
+  overflow: hidden;
+}
+
+/* --- LAYOUT AND CONTAINER STYLES --- */
+.home-root {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  display: flex;
+  flex-direction: column;
+  overflow: hidden;
+  background-color: var(--color-background-light);
+  height: 100vh;
+  width: 100vw;
+}
+
+.home-root.dark {
+  background-color: var(--color-background-dark);
+}
+
+/* Remove or fix these if you're using them */
+/* .background-image-layer {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  z-index: 0;
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+.background-overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  z-index: 1;
+  background-color: rgba(16, 34, 24, 0.8);
+  backdrop-filter: blur(16px);
+} */
+
+.home-container {
+  position: relative;
+  z-index: 2;
+  display: flex;
+  height: 100%;
+  width: 100%;
+  margin: 0;
+  padding: 1rem;
+  box-sizing: border-box;
+}
+
+.main-content {
+  flex: 1;
+  min-width: 0;
+  border-radius: var(--radius-xl);
+  background-color: rgba(16, 34, 24, 0.5);
+  border: 1px solid var(--color-border);
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+  max-height: 100%;
+}
+
+.content-wrapper {
+  display: flex;
+  flex: 1;
+  flex-direction: column;
+  padding: 1rem;
+  min-height: 0;
+  height: 100%;
+  max-height: 100%;
+  box-sizing: border-box;
+  overflow: hidden;
+}
+
+@media (min-width: 640px) {
+  .content-wrapper {
+    padding: 1.5rem;
+  }
+}
+
+.chat-area {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  min-height: 0;
+  overflow-y: auto;
+  overflow-x: hidden;
+  max-height: 100%;
+}
+
+.empty-chat {
+  flex: 1;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100%;
+  min-height: 100%;
+}
+
+.empty-text {
+  color: var(--color-text-secondary);
+  font-size: 1rem;
+  margin: 0;
+}
+
+/* Input Section - Fixed at bottom inside the card */
+.input-section {
+  margin-top: auto;
+  padding-top: 1rem;
+  border-top: 1px solid var(--color-border);
+  flex-shrink: 0;
+}
+
+.input-form {
+  width: 100%;
+}
+
+.input-wrapper {
+  position: relative;
+  display: flex;
+  align-items: center;
+}
+
+.attachment-button {
+  position: absolute;
+  left: 0.75rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 2rem;
+  height: 2rem;
+  color: var(--color-text-muted);
+  background: none;
+  border: none;
+  cursor: pointer;
+  border-radius: var(--radius-default);
+  z-index: 2;
+  transition: color 0.2s ease;
+}
+
+.attachment-button:hover {
+  color: var(--color-primary);
+  background-color: rgba(255, 255, 255, 0.1);
+}
+
+.message-input {
+  width: 100%;
+  border-radius: var(--radius-lg);
+  border: none;
+  background-color: rgba(16, 34, 24, 0.7);
+  padding: 0.75rem 3rem 0.75rem 3rem;
+  font-size: 0.875rem;
+  color: rgba(255, 255, 255, 0.9);
+  font-family: 'Space Grotesk', sans-serif;
+  box-sizing: border-box;
+}
+
+.message-input::placeholder {
+  color: rgba(255, 255, 255, 0.4);
+}
+
+.message-input:focus {
+  outline: none;
+  box-shadow: 0 0 0 2px rgba(19, 236, 109, 0.5);
+}
+
+.send-button {
+  position: absolute;
+  right: 0.5rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 2.5rem;
+  height: 2.5rem;
+  color: var(--color-text-muted);
+  background: none;
+  border: none;
+  cursor: pointer;
+  border-radius: var(--radius-default);
+  z-index: 2;
+  transition: color 0.2s ease;
+}
+
+.send-button:hover {
+  color: var(--color-primary);
+  background-color: rgba(255, 255, 255, 0.1);
+}
+
+/* Loading states for home component */
+.button-loading {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.button-spinner {
+  width: 16px;
+  height: 16px;
+  border: 2px solid rgba(255, 255, 255, 0.3);
+  border-left: 2px solid white;
+  border-radius: 50%;
+  animation: spin 1s linear infinite;
+}
+
+.send-button-disabled {
+  opacity: 0.6;
+  cursor: not-allowed;
+}
+
+.send-button-disabled:hover {
+  transform: none;
+  box-shadow: none;
+}
+
+/* Animation for empty state */
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+@keyframes spin {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}
+
+/* Connection Status */
+.connection-status {
+  position: fixed;
+  top: 1rem;
+  right: 1rem;
+  padding: 0.5rem 1rem;
+  border-radius: var(--radius-lg);
+  font-size: 0.8rem;
+  font-weight: 600;
+  z-index: 1000;
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  backdrop-filter: blur(10px);
+}
+
+.connection-status.connected {
+  background: rgba(76, 175, 80, 0.1);
+  color: var(--color-primary);
+  border: 1px solid rgba(76, 175, 80, 0.2);
+}
+
+.connection-status.disconnected {
+  background: rgba(244, 67, 54, 0.1);
+  color: var(--color-error);
+  border: 1px solid rgba(244, 67, 54, 0.2);
+}
+
+.test-connection-btn {
+  background: rgba(255, 255, 255, 0.2);
+  border: 1px solid rgba(255, 255, 255, 0.3);
+  color: inherit;
+  padding: 0.25rem 0.5rem;
+  border-radius: var(--radius-default);
+  font-size: 0.7rem;
+  cursor: pointer;
+  transition: all 0.2s ease;
+}
+
+.test-connection-btn:hover {
+  background: rgba(255, 255, 255, 0.3);
+}
+
+.connection-warning {
+  font-size: 0.8rem;
+  color: var(--color-error);
+  margin-top: 0.5rem;
+  opacity: 0.8;
+}
+
+.send-button-disabled {
+  opacity: 0.5;
+  cursor: not-allowed;
+}
+
+.send-button-disabled:hover {
+  transform: none;
+  box-shadow: none;
+}
+
+/* Chat messages container specific fixes */
+.chat-messages-container {
+  flex: 1;
+  overflow-y: auto;
+  min-height: 0;
+  max-height: 100%;
+  display: flex;
+  flex-direction: column;
+}
+
+/* Ensure proper height calculation */
+* {
+  box-sizing: border-box;
+}
+
+/* Additional fixes for very small screens */
+@media (max-height: 600px) {
+  .home-container {
+    padding: 0.5rem;
+  }
+  
+  .content-wrapper {
+    padding: 0.75rem;
+  }
+  
+  .message-input {
+    padding: 0.5rem 2.5rem 0.5rem 2.5rem;
+  }
+}

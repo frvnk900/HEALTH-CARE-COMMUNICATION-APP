@@ -1,0 +1,493 @@
+[
+    {
+        "username": "joseph banda",
+        "user_id": "61n7qMiXH3aJ",
+        "gender": "male",
+        "email": "frvnkkwizigira@gmail.com",
+        "password": "5fw652f65rw526fgs3",
+        "phone": "996666274",
+        "age": "19",
+        "location": "dowa",
+        "schedule": [
+            {
+                "schedule_title": "Morning mediction",
+                "description": "at the queen elizebath",
+                "active": false,
+                "ends_on": "tue/12/2025",
+                "calendar_data": [
+                    {
+                        "time": "",
+                        "day": "monday",
+                        "remind_me": false
+                    },
+                    {
+                        "time": "",
+                        "day": "tuesday",
+                        "remind_me": false
+                    },
+                    {
+                        "time": "",
+                        "day": "wednesday",
+                        "remind_me": false
+                    },
+                    {
+                        "time": "5:27PM",
+                        "day": "thursday",
+                        "remind_me": false
+                    },
+                    {
+                        "time": "",
+                        "day": "friday",
+                        "remind_me": false
+                    },
+                    {
+                        "time": "",
+                        "day": "saturday",
+                        "remind_me": false
+                    },
+                    {
+                        "time": "",
+                        "day": "sunday",
+                        "remind_me": false
+                    }
+                ],
+                "_id": 72941
+            },
+            {
+                "schedule_title": "Gpdksmv kmdv",
+                "description": "cdckdsv,kdv,kdv",
+                "active": false,
+                "ends_on": "tue/12/2025",
+                "calendar_data": [
+                    {
+                        "time": "",
+                        "day": "monday",
+                        "remind_me": false
+                    },
+                    {
+                        "time": "",
+                        "day": "tuesday",
+                        "remind_me": false
+                    },
+                    {
+                        "time": "",
+                        "day": "wednesday",
+                        "remind_me": false
+                    },
+                    {
+                        "time": "",
+                        "day": "thursday",
+                        "remind_me": false
+                    },
+                    {
+                        "time": "10:17",
+                        "day": "friday",
+                        "remind_me": false
+                    },
+                    {
+                        "time": "",
+                        "day": "saturday",
+                        "remind_me": false
+                    },
+                    {
+                        "time": "",
+                        "day": "sunday",
+                        "remind_me": false
+                    }
+                ],
+                "_id": 47030
+            },
+            {
+                "schedule_title": "dfkvmkdfvds0v0s0ds",
+                "description": "cc d d d d",
+                "active": true,
+                "ends_on": "tue/12/2025",
+                "calendar_data": [
+                    {
+                        "time": "",
+                        "day": "monday",
+                        "remind_me": false
+                    },
+                    {
+                        "time": "",
+                        "day": "tuesday",
+                        "remind_me": false
+                    },
+                    {
+                        "time": "",
+                        "day": "wednesday",
+                        "remind_me": false
+                    },
+                    {
+                        "time": "",
+                        "day": "thursday",
+                        "remind_me": false
+                    },
+                    {
+                        "time": "10:22PM",
+                        "day": "friday",
+                        "remind_me": false
+                    },
+                    {
+                        "time": "",
+                        "day": "saturday",
+                        "remind_me": false
+                    },
+                    {
+                        "time": "",
+                        "day": "sunday",
+                        "remind_me": false
+                    }
+                ],
+                "_id": 87140
+            }
+        ],
+        "profile_image": "kkRjT8bRqfrG.jpg"
+    },
+    {
+        "username": "john wimana",
+        "user_id": "UFI9cShqqX0K",
+        "gender": "male",
+        "email": "Yfrvnk@yahoo.com",
+        "password": "1235678frank",
+        "phone": "996666274",
+        "age": "23",
+        "location": "dowa",
+        "schedule": [
+            {
+                "schedule_title": "Morning medication",
+                "description": "i will take moring medication on this day",
+                "active": true,
+                "ends_on": "mon/12/2025",
+                "calendar_data": [
+                    {
+                        "time": "",
+                        "day": "monday",
+                        "remind_me": false
+                    },
+                    {
+                        "time": "",
+                        "day": "tuesday",
+                        "remind_me": false
+                    },
+                    {
+                        "time": "",
+                        "day": "wednesday",
+                        "remind_me": false
+                    },
+                    {
+                        "time": "12:20PM",
+                        "day": "thursday",
+                        "remind_me": false
+                    },
+                    {
+                        "time": "",
+                        "day": "friday",
+                        "remind_me": false
+                    },
+                    {
+                        "time": "",
+                        "day": "saturday",
+                        "remind_me": false
+                    },
+                    {
+                        "time": "",
+                        "day": "sunday",
+                        "remind_me": false
+                    }
+                ]
+            },
+            {
+                "schedule_title": "Go to QueenElizerbath",
+                "description": "go to vist the queen elizerbath hospital for quick checkup",
+                "active": true,
+                "ends_on": "tue/11/2025",
+                "calendar_data": [
+                    {
+                        "time": "",
+                        "day": "monday",
+                        "remind_me": false
+                    },
+                    {
+                        "time": "",
+                        "day": "tuesday",
+                        "remind_me": false
+                    },
+                    {
+                        "time": "",
+                        "day": "wednesday",
+                        "remind_me": false
+                    },
+                    {
+                        "time": "12:39PM",
+                        "day": "thursday",
+                        "remind_me": false
+                    },
+                    {
+                        "time": "",
+                        "day": "friday",
+                        "remind_me": false
+                    },
+                    {
+                        "time": "",
+                        "day": "saturday",
+                        "remind_me": false
+                    },
+                    {
+                        "time": "",
+                        "day": "sunday",
+                        "remind_me": false
+                    }
+                ]
+            },
+            {
+                "schedule_title": "Go to the Hospital",
+                "description": "go to hospital",
+                "active": true,
+                "ends_on": "fri/12/2025",
+                "calendar_data": [
+                    {
+                        "time": "",
+                        "day": "monday",
+                        "remind_me": false
+                    },
+                    {
+                        "time": "",
+                        "day": "tuesday",
+                        "remind_me": false
+                    },
+                    {
+                        "time": "",
+                        "day": "wednesday",
+                        "remind_me": false
+                    },
+                    {
+                        "time": "12:57pm",
+                        "day": "thursday",
+                        "remind_me": false
+                    },
+                    {
+                        "time": "",
+                        "day": "friday",
+                        "remind_me": false
+                    },
+                    {
+                        "time": "",
+                        "day": "saturday",
+                        "remind_me": false
+                    },
+                    {
+                        "time": "",
+                        "day": "sunday",
+                        "remind_me": false
+                    }
+                ]
+            },
+            {
+                "schedule_title": "hhcxhjcbcxhjbxjgcxx",
+                "description": "go to the clunic",
+                "active": true,
+                "ends_on": "mon/12/2025",
+                "calendar_data": [
+                    {
+                        "time": "",
+                        "day": "monday",
+                        "remind_me": false
+                    },
+                    {
+                        "time": "",
+                        "day": "tuesday",
+                        "remind_me": false
+                    },
+                    {
+                        "time": "",
+                        "day": "wednesday",
+                        "remind_me": false
+                    },
+                    {
+                        "time": "01:15pm",
+                        "day": "thursday",
+                        "remind_me": false
+                    },
+                    {
+                        "time": "",
+                        "day": "friday",
+                        "remind_me": false
+                    },
+                    {
+                        "time": "",
+                        "day": "saturday",
+                        "remind_me": false
+                    },
+                    {
+                        "time": "",
+                        "day": "sunday",
+                        "remind_me": false
+                    }
+                ]
+            }
+        ],
+        "profile_image": "YxBVlB08xx3Y.jpg"
+    },
+    {
+        "username": "hghhghgu hghggfhgg",
+        "user_id": "PorFoOWCYXpe",
+        "gender": "male",
+        "email": "example@gmail.com",
+        "password": "1234567890",
+        "phone": "+265996666274",
+        "age": "34",
+        "location": "dowa",
+        "schedule": [],
+        "profile_image": "Ggni5QrXlbUc.jpg"
+    },
+    {
+        "username": "desire",
+        "user_id": "icJ2FQ5pEcUG",
+        "gender": "male",
+        "email": "ndizeyenoriega@gmail.com",
+        "password": "nori@55",
+        "phone": "+265996666274",
+        "age": "20",
+        "location": "dowa",
+        "schedule": [],
+        "profile_image": "zPCUBC02xNJk.jpg"
+    },
+    {
+        "username": "amani",
+        "user_id": "bFboZJcqIxiV",
+        "gender": "male",
+        "email": "amani@gmail.com",
+        "password": "a12345678",
+        "phone": "+2659999900000",
+        "age": "19",
+        "location": "lilongwe",
+        "schedule": [],
+        "profile_image": "ktgeCM9CHAcC.jpg"
+    },
+    {
+        "username": "jean pierre",
+        "user_id": "d8NCywLpRpvi",
+        "gender": "male",
+        "email": "jean@gmail.com",
+        "password": "abcd1234",
+        "phone": "+265991239991",
+        "age": "23",
+        "location": "dowa",
+        "schedule": [],
+        "profile_image": "mJ01gLcIKKDd.jpg"
+    },
+    {
+        "username": "a",
+        "user_id": "MvuhuMi6ZbOG",
+        "gender": "female",
+        "email": "a@a",
+        "password": "a12345678",
+        "phone": "+265996666274",
+        "age": "33",
+        "location": "Dowa",
+        "schedule": [
+            {
+                "schedule_title": "Training",
+                "description": "adfasfsdgdfhgfjgh",
+                "active": false,
+                "ends_on": "11/30/2025",
+                "calendar_data": [
+                    {
+                        "time": "",
+                        "day": "monday",
+                        "remind_me": false
+                    },
+                    {
+                        "time": "",
+                        "day": "tuesday",
+                        "remind_me": false
+                    },
+                    {
+                        "time": "",
+                        "day": "wednesday",
+                        "remind_me": false
+                    },
+                    {
+                        "time": "",
+                        "day": "thursday",
+                        "remind_me": false
+                    },
+                    {
+                        "time": "11:19",
+                        "day": "friday",
+                        "remind_me": false
+                    },
+                    {
+                        "time": "",
+                        "day": "saturday",
+                        "remind_me": false
+                    },
+                    {
+                        "time": "",
+                        "day": "sunday",
+                        "remind_me": false
+                    }
+                ]
+            }
+        ],
+        "profile_image": "VBoGq6GGdPAh.jpg"
+    },
+    {
+        "username": "Peter Patrick",
+        "user_id": "ObE71Wq98FaJ",
+        "gender": "male",
+        "email": "peter@gmail.com",
+        "password": "Peter@123",
+        "phone": "+265990397813",
+        "age": "23",
+        "location": "Dowa",
+        "schedule": [
+            {
+                "schedule_title": "Morning workout",
+                "description": "weegdgf",
+                "active": true,
+                "ends_on": "12/5/2025",
+                "calendar_data": [
+                    {
+                        "time": "",
+                        "day": "monday",
+                        "remind_me": false
+                    },
+                    {
+                        "time": "",
+                        "day": "tuesday",
+                        "remind_me": false
+                    },
+                    {
+                        "time": "",
+                        "day": "wednesday",
+                        "remind_me": false
+                    },
+                    {
+                        "time": "",
+                        "day": "thursday",
+                        "remind_me": false
+                    },
+                    {
+                        "time": "12:30",
+                        "day": "friday",
+                        "remind_me": false
+                    },
+                    {
+                        "time": "",
+                        "day": "saturday",
+                        "remind_me": false
+                    },
+                    {
+                        "time": "",
+                        "day": "sunday",
+                        "remind_me": false
+                    }
+                ],
+                "_id": 62827
+            }
+        ],
+        "profile_image": "snz686LUT2qP.png"
+    }
+]

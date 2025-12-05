@@ -1,0 +1,327 @@
+/* --- CSS VARIABLES & FONTS --- */
+:root {
+  --color-primary: #13ec6d;
+  --color-primary-hover: #10d461;
+  --color-background-light: #f6f8f7;
+  --color-background-dark: #102218;
+  --color-text-light: #ffffff;
+  --color-text-dark: #1f2937;
+  --color-text-secondary-light: #6b7280;
+  --color-text-secondary-dark: #92c9a9;
+  --radius-default: 0.5rem;
+  --radius-lg: 0.75rem;
+  --radius-xl: 1rem;
+  --radius-full: 50%;
+}
+
+@import url('https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@300..700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&display=swap');
+
+.font-display {
+  font-family: 'Space Grotesk', sans-serif;
+}
+
+.material-symbols-outlined {
+  font-variation-settings: 'FILL' 0, 'wght' 400, 'GRAD' 0, 'opsz' 24;
+}
+
+/* --- LAYOUT AND CONTAINER STYLES --- */
+.team-root {
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  background-color: white;
+  position: relative;
+}
+
+.team-root.dark {
+  background-color: var(--color-background-dark);
+}
+
+.background-image-layer {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  z-index: 0;
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  filter: blur(8px);
+  transform: scale(1.02);
+}
+
+.dark-overlay-layer {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  z-index: 1;
+  background-color: rgba(16, 34, 24, 0.85);
+}
+
+.team-container {
+  position: relative;
+  z-index: 2;
+  flex: 1;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 2rem 1rem;
+  min-height: 100vh;
+}
+
+.team-content {
+  width: 100%;
+  max-width: 1200px;
+  display: flex;
+  flex-direction: column;
+  gap: 3rem;
+}
+
+/* Header Section */
+.team-header {
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 1rem;
+}
+
+.team-title {
+  font-size: 3rem;
+  font-weight: 700;
+  color: var(--color-text-light);
+  margin: 0;
+  line-height: 1.1;
+  letter-spacing: -0.02em;
+}
+
+.team-subtitle {
+  font-size: 1.25rem;
+  color: var(--color-text-secondary-dark);
+  margin: 0;
+  line-height: 1.6;
+  max-width: 600px;
+}
+
+/* Team Grid */
+.team-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
+  gap: 2rem;
+}
+
+.team-card {
+  background: linear-gradient(135deg, rgba(255, 255, 255, 0.1) 0%, rgba(255, 255, 255, 0.05) 100%);
+  border: 1px solid rgba(255, 255, 255, 0.15);
+  border-radius: var(--radius-xl);
+  padding: 2rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  transition: all 0.3s ease;
+  backdrop-filter: blur(20px);
+  box-shadow: 0 8px 32px rgba(0, 0, 0, 0.1);
+}
+
+.dark .team-card {
+  background: linear-gradient(135deg, rgba(17, 34, 24, 0.3) 0%, rgba(25, 51, 36, 0.2) 100%);
+}
+
+.team-card:hover {
+  transform: translateY(-5px);
+  border-color: rgba(19, 236, 109, 0.3);
+  box-shadow: 0 12px 40px rgba(0, 0, 0, 0.2);
+}
+
+.card-icon {
+  width: 80px;
+  height: 80px;
+  border-radius: var(--radius-full);
+  background: linear-gradient(135deg, var(--color-primary) 0%, var(--color-primary-hover) 100%);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 1.5rem;
+  box-shadow: 0 4px 15px rgba(19, 236, 109, 0.3);
+}
+
+.card-icon .material-symbols-outlined {
+  font-size: 2.5rem;
+  color: var(--color-background-dark);
+}
+
+.card-content {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  gap: 0.75rem;
+}
+
+.member-name {
+  font-size: 1.5rem;
+  font-weight: 700;
+  color: var(--color-text-light);
+  margin: 0;
+  line-height: 1.2;
+}
+
+.member-role {
+  font-size: 1rem;
+  font-weight: 600;
+  color: var(--color-primary);
+  margin: 0;
+  line-height: 1.4;
+}
+
+.member-description {
+  font-size: 0.95rem;
+  color: var(--color-text-secondary-dark);
+  margin: 0;
+  line-height: 1.5;
+}
+
+/* Call to Action Section */
+.team-cta {
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 1.5rem;
+  padding: 3rem 2rem;
+  background: linear-gradient(135deg, rgba(19, 236, 109, 0.1) 0%, rgba(19, 236, 109, 0.05) 100%);
+  border-radius: var(--radius-xl);
+  border: 1px solid rgba(19, 236, 109, 0.2);
+  backdrop-filter: blur(10px);
+}
+
+.cta-title {
+  font-size: 2rem;
+  font-weight: 700;
+  color: var(--color-text-light);
+  margin: 0;
+  line-height: 1.2;
+}
+
+.cta-subtitle {
+  font-size: 1.125rem;
+  color: var(--color-text-secondary-dark);
+  margin: 0;
+  line-height: 1.6;
+  max-width: 500px;
+}
+
+.cta-button {
+  display: flex;
+  align-items: center;
+  gap: 0.75rem;
+  padding: 1rem 2rem;
+  background: linear-gradient(135deg, var(--color-primary) 0%, var(--color-primary-hover) 100%);
+  color: var(--color-background-dark);
+  border: none;
+  border-radius: var(--radius-lg);
+  font-size: 1.125rem;
+  font-weight: 700;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  box-shadow: 0 4px 15px rgba(19, 236, 109, 0.3);
+}
+
+.cta-button:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 6px 20px rgba(19, 236, 109, 0.4);
+}
+
+.button-text {
+  font-weight: 600;
+}
+
+/* Scrollbar Styling */
+.team-container::-webkit-scrollbar {
+  width: 6px;
+}
+
+.team-container::-webkit-scrollbar-track {
+  background: transparent;
+}
+
+.team-container::-webkit-scrollbar-thumb {
+  background: rgba(255, 255, 255, 0.2);
+  border-radius: 3px;
+}
+
+.team-container::-webkit-scrollbar-thumb:hover {
+  background: rgba(255, 255, 255, 0.3);
+}
+
+/* --- MOBILE RESPONSIVENESS --- */
+@media (max-width: 768px) {
+  .team-container {
+    padding: 1rem 0.5rem;
+  }
+  
+  .team-content {
+    gap: 2rem;
+  }
+  
+  .team-title {
+    font-size: 2.5rem;
+  }
+  
+  .team-subtitle {
+    font-size: 1.125rem;
+  }
+  
+  .team-grid {
+    grid-template-columns: 1fr;
+    gap: 1.5rem;
+  }
+  
+  .team-card {
+    padding: 1.5rem;
+  }
+  
+  .card-icon {
+    width: 70px;
+    height: 70px;
+  }
+  
+  .card-icon .material-symbols-outlined {
+    font-size: 2rem;
+  }
+  
+  .member-name {
+    font-size: 1.25rem;
+  }
+  
+  .cta-title {
+    font-size: 1.75rem;
+  }
+  
+  .team-cta {
+    padding: 2rem 1rem;
+  }
+}
+
+@media (max-width: 480px) {
+  .team-title {
+    font-size: 2rem;
+  }
+  
+  .team-subtitle {
+    font-size: 1rem;
+  }
+  
+  .team-card {
+    padding: 1.25rem;
+  }
+  
+  .cta-title {
+    font-size: 1.5rem;
+  }
+}

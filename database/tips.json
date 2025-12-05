@@ -1,0 +1,217 @@
+[
+  {
+    "id": 1,
+    "category": "nutrition",
+    "tip": "Drink a glass of water first thing in the morning to kickstart hydration",
+    "icon": "💧",
+    "priority": "high"
+  },
+  {
+    "id": 2,
+    "category": "nutrition",
+    "tip": "Eat the rainbow - include fruits and vegetables of different colors daily",
+    "icon": "🌈",
+    "priority": "medium"
+  },
+  {
+    "id": 3,
+    "category": "nutrition",
+    "tip": "Chew your food thoroughly (20-30 times per bite) for better digestion",
+    "icon": "🍽️",
+    "priority": "medium"
+  },
+  {
+    "id": 4,
+    "category": "nutrition",
+    "tip": "Use herbs and spices instead of salt to reduce sodium intake",
+    "icon": "🌿",
+    "priority": "medium"
+  },
+  {
+    "id": 5,
+    "category": "nutrition",
+    "tip": "Include protein in every meal to maintain energy levels throughout the day",
+    "icon": "🥚",
+    "priority": "high"
+  },
+
+  {
+    "id": 6,
+    "category": "fitness",
+    "tip": "Take the stairs whenever possible to add movement to your day",
+    "icon": "🪜",
+    "priority": "low"
+  },
+  {
+    "id": 7,
+    "category": "fitness",
+    "tip": "Stand up and stretch every 30 minutes if you have a desk job",
+    "icon": "🪑",
+    "priority": "medium"
+  },
+  {
+    "id": 8,
+    "category": "fitness",
+    "tip": "Try 5-minute 'exercise snacks' throughout the day instead of one long workout",
+    "icon": "⏱️",
+    "priority": "low"
+  },
+  {
+    "id": 9,
+    "category": "fitness",
+    "tip": "Park farther away to add extra walking steps to your routine",
+    "icon": "🚗",
+    "priority": "low"
+  },
+  {
+    "id": 10,
+    "category": "fitness",
+    "tip": "Incorporate strength training 2-3 times per week for bone health",
+    "icon": "💪",
+    "priority": "medium"
+  },
+
+  {
+    "id": 11,
+    "category": "mental_health",
+    "tip": "Practice 5 minutes of deep breathing daily to reduce stress",
+    "icon": "🧘",
+    "priority": "high"
+  },
+  {
+    "id": 12,
+    "category": "mental_health",
+    "tip": "Keep a gratitude journal - write 3 positive things each day",
+    "icon": "📔",
+    "priority": "medium"
+  },
+  {
+    "id": 13,
+    "category": "mental_health",
+    "tip": "Create a consistent bedtime routine for better sleep quality",
+    "icon": "🛌",
+    "priority": "high"
+  },
+  {
+    "id": 14,
+    "category": "mental_health",
+    "tip": "Avoid screens 30 minutes before bed to improve sleep",
+    "icon": "📵",
+    "priority": "medium"
+  },
+  {
+    "id": 15,
+    "category": "mental_health",
+    "tip": "Laugh daily - it reduces stress hormones and boosts immunity",
+    "icon": "😄",
+    "priority": "low"
+  },
+
+  {
+    "id": 16,
+    "category": "hygiene",
+    "tip": "Wash hands for 20 seconds with soap to prevent illness",
+    "icon": "🧼",
+    "priority": "high"
+  },
+  {
+    "id": 17,
+    "category": "prevention",
+    "tip": "Use sunscreen daily, even on cloudy days",
+    "icon": "☀️",
+    "priority": "medium"
+  },
+  {
+    "id": 18,
+    "category": "hygiene",
+    "tip": "Floss daily to reduce gum disease risk and support heart health",
+    "icon": "🦷",
+    "priority": "medium"
+  },
+  {
+    "id": 19,
+    "category": "hydration",
+    "tip": "Drink water throughout the day, not just when thirsty",
+    "icon": "💦",
+    "priority": "high"
+  },
+  {
+    "id": 20,
+    "category": "posture",
+    "tip": "Practice good posture - align ears, shoulders, and hips when sitting",
+    "icon": "🧍",
+    "priority": "low"
+  },
+
+  {
+    "id": 21,
+    "category": "prevention",
+    "tip": "Get annual check-ups even when feeling healthy",
+    "icon": "🏥",
+    "priority": "high"
+  },
+  {
+    "id": 22,
+    "category": "prevention",
+    "tip": "Know your family medical history for better preventive care",
+    "icon": "👨‍👩‍👧‍👦",
+    "priority": "medium"
+  },
+  {
+    "id": 23,
+    "category": "prevention",
+    "tip": "Wear proper footwear that supports your arches and activities",
+    "icon": "👟",
+    "priority": "low"
+  },
+  {
+    "id": 24,
+    "category": "prevention",
+    "tip": "Get vaccinated according to recommended schedules",
+    "icon": "💉",
+    "priority": "high"
+  },
+  {
+    "id": 25,
+    "category": "prevention",
+    "tip": "Practice safe lifting techniques - bend knees, not back",
+    "icon": "📦",
+    "priority": "medium"
+  },
+
+  {
+    "id": 26,
+    "category": "lifestyle",
+    "tip": "Take regular breaks from prolonged sitting or standing",
+    "icon": "🔄",
+    "priority": "medium"
+  },
+  {
+    "id": 27,
+    "category": "lifestyle",
+    "tip": "Maintain social connections for mental and emotional wellbeing",
+    "icon": "👥",
+    "priority": "medium"
+  },
+  {
+    "id": 28,
+    "category": "lifestyle",
+    "tip": "Learn to recognize and manage stress triggers effectively",
+    "icon": "🎯",
+    "priority": "high"
+  },
+  {
+    "id": 29,
+    "category": "lifestyle",
+    "tip": "Practice mindful eating without distractions like TV or phones",
+    "icon": "🍴",
+    "priority": "low"
+  },
+  {
+    "id": 30,
+    "category": "lifestyle",
+    "tip": "Get 7-9 hours of quality sleep each night for optimal health",
+    "icon": "🌙",
+    "priority": "high"
+  }
+]

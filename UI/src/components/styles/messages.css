@@ -1,0 +1,342 @@
+/* Messages Component Styles */
+.messages-container {
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+}
+
+.messages-list {
+  flex: 1;
+  overflow-y: auto;
+  padding: 1rem;
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+
+/* Hide scrollbar for messages */
+.messages-list::-webkit-scrollbar {
+  display: none;
+}
+
+.messages-list {
+  -ms-overflow-style: none;
+  scrollbar-width: none;
+}
+
+.message {
+  display: flex;
+  max-width: 85%;
+  animation: messageSlideIn 0.3s ease;
+}
+
+.user-message {
+  align-self: flex-end;
+}
+
+.ai-message {
+  align-self: flex-start;
+  position: relative;
+}
+
+.file-upload-system-message {
+  align-self: center;
+  max-width: 70%;
+  margin: 0.5rem auto;
+}
+
+.message-content {
+  padding: 0.75rem 1rem;
+  border-radius: 1rem;
+  position: relative;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+  min-width: 120px;
+  word-wrap: break-word;
+  overflow-wrap: break-word;
+}
+
+.user-message .message-content {
+  background: linear-gradient(135deg, var(--color-primary) 0%, var(--color-primary-hover) 100%);
+  color: white;
+  border-bottom-right-radius: 0.25rem;
+}
+
+.ai-message .message-content {
+  background: rgba(255, 255, 255, 0.9);
+  color: var(--color-text-dark);
+  border-bottom-left-radius: 0.25rem;
+}
+
+.dark .ai-message .message-content {
+  background: rgba(25, 51, 36, 0.8);
+  color: var(--color-text-light);
+  border: 1px solid rgba(255, 255, 255, 0.1);
+}
+
+/* Markdown Content Styling */
+.markdown-content {
+  font-size: 0.9rem;
+  line-height: 1.6;
+}
+
+.markdown-h1, .markdown-h2, .markdown-h3 {
+  margin-top: 1em;
+  margin-bottom: 0.5em;
+  font-weight: 600;
+}
+
+.markdown-h1 {
+  font-size: 1.5em;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+  padding-bottom: 0.3em;
+}
+
+.markdown-h2 {
+  font-size: 1.3em;
+}
+
+.markdown-h3 {
+  font-size: 1.1em;
+}
+
+.markdown-list {
+  margin: 0.5em 0;
+  padding-left: 1.5em;
+}
+
+.markdown-list-item {
+  margin: 0.3em 0;
+}
+
+.markdown-strong {
+  font-weight: 700;
+  color: var(--color-primary);
+}
+
+.dark .markdown-strong {
+  color: #13ec6d;
+}
+
+.markdown-em {
+  font-style: italic;
+}
+
+.markdown-paragraph {
+  margin: 0.5em 0;
+}
+
+.markdown-inline-code {
+  background: rgba(0, 0, 0, 0.1);
+  padding: 0.2em 0.4em;
+  border-radius: 3px;
+  font-family: 'Monaco', 'Menlo', 'Ubuntu Mono', monospace;
+  font-size: 0.85em;
+}
+
+.dark .markdown-inline-code {
+  background: rgba(255, 255, 255, 0.1);
+}
+
+.markdown-code-block {
+  display: block;
+  background: rgba(0, 0, 0, 0.05);
+  padding: 0.8em;
+  border-radius: 4px;
+  font-family: 'Monaco', 'Menlo', 'Ubuntu Mono', monospace;
+  font-size: 0.85em;
+  overflow-x: auto;
+  margin: 0.5em 0;
+}
+
+.dark .markdown-code-block {
+  background: rgba(255, 255, 255, 0.05);
+}
+
+/* Copy Button Styling */
+.copy-button {
+  position: absolute;
+  bottom: -10px;
+  right: 10px;
+  background: rgba(255, 255, 255, 0.9);
+  border: 1px solid rgba(0, 0, 0, 0.1);
+  border-radius: 12px;
+  padding: 4px 8px;
+  display: flex;
+  align-items: center;
+  gap: 4px;
+  cursor: pointer;
+  opacity: 0;
+  transition: all 0.2s ease;
+  font-size: 0.75rem;
+  color: #333;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.dark .copy-button {
+  background: rgba(25, 51, 36, 0.9);
+  border-color: rgba(255, 255, 255, 0.2);
+  color: var(--color-text-light);
+}
+
+.ai-message:hover .copy-button {
+  opacity: 1;
+  bottom: -12px;
+}
+
+.copy-button:hover {
+  background: white;
+  transform: translateY(-1px);
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.15);
+}
+
+.dark .copy-button:hover {
+  background: rgba(40, 60, 45, 0.9);
+}
+
+.copy-button.copied {
+  background: #4caf50;
+  color: white;
+  opacity: 1;
+}
+
+.dark .copy-button.copied {
+  background: #2e7d32;
+}
+
+.copy-icon {
+  font-size: 14px;
+}
+
+.copy-tooltip {
+  white-space: nowrap;
+  font-weight: 500;
+}
+
+/* Message Link Styles */
+.message-link {
+  color: #4285f4;
+  text-decoration: none;
+  font-weight: 600;
+  padding: 2px 6px;
+  border-radius: 4px;
+  background: rgba(66, 133, 244, 0.1);
+  border: 1px solid rgba(66, 133, 244, 0.3);
+  transition: all 0.2s ease;
+  display: inline-block;
+  margin: 2px 0;
+}
+
+.dark .message-link {
+  color: #64b5f6;
+  background: rgba(100, 181, 246, 0.1);
+  border-color: rgba(100, 181, 246, 0.3);
+}
+
+.message-link:hover {
+  background: rgba(66, 133, 244, 0.2);
+  border-color: rgba(66, 133, 244, 0.5);
+  text-decoration: underline;
+  transform: translateY(-1px);
+}
+
+.dark .message-link:hover {
+  background: rgba(100, 181, 246, 0.2);
+  border-color: rgba(100, 181, 246, 0.5);
+}
+
+.user-message .message-link {
+  color: #ffffff;
+  background: rgba(255, 255, 255, 0.2);
+  border-color: rgba(255, 255, 255, 0.4);
+}
+
+.user-message .message-link:hover {
+  background: rgba(255, 255, 255, 0.3);
+  border-color: rgba(255, 255, 255, 0.6);
+}
+
+/* File Upload Message Styles */
+.file-upload-system-message .message-content {
+  background: rgba(76, 175, 80, 0.1);
+  border: 1px solid rgba(76, 175, 80, 0.3);
+  color: #2e7d32;
+  border-radius: 0.75rem;
+  padding: 0.75rem 1rem;
+}
+
+.dark .file-upload-system-message .message-content {
+  background: rgba(76, 175, 80, 0.15);
+  border: 1px solid rgba(76, 175, 80, 0.4);
+  color: #4caf50;
+}
+
+.error-message .message-content {
+  background: rgba(244, 67, 54, 0.1) !important;
+  color: #d32f2f !important;
+  border: 1px solid rgba(244, 67, 54, 0.2);
+}
+
+.message-text {
+  font-size: 0.9rem;
+  line-height: 1.4;
+  margin-bottom: 0.25rem;
+  word-wrap: break-word;
+}
+
+.message-time {
+  font-size: 0.7rem;
+  opacity: 0.7;
+  text-align: right;
+  margin-top: 0.25rem;
+}
+
+.user-message .message-time {
+  color: rgba(255, 255, 255, 0.8);
+}
+
+.ai-message .message-time {
+  color: var(--color-text-secondary-light);
+}
+
+.dark .ai-message .message-time {
+  color: var(--color-text-secondary-dark);
+}
+
+/* Animation */
+@keyframes messageSlideIn {
+  from {
+    opacity: 0;
+    transform: translateY(10px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  .message {
+    max-width: 90%;
+  }
+  
+  .file-upload-system-message {
+    max-width: 85%;
+  }
+  
+  .message-content {
+    padding: 0.6rem 0.8rem;
+  }
+  
+  .markdown-content {
+    font-size: 0.85rem;
+  }
+  
+  .copy-button {
+    opacity: 1; /* Always show on mobile */
+    bottom: -8px;
+    right: 5px;
+    padding: 3px 6px;
+    font-size: 0.7rem;
+  }
+}

@@ -1,0 +1,1042 @@
+ 
+[
+  
+  {
+    "disease": "Malaria",
+    "signs": [
+      "Fever (often high)",
+      "Chills and rigors",
+      "Headache",
+      "Vomiting, sweating, fatigue",
+      "Danger signs: altered consciousness, high respiratory rate, inability to drink, seizures"
+    ],
+    "causes": [
+      "Protozoan parasites of the genus Plasmodium transmitted by infected Anopheles mosquitoes"
+    ],
+    "prevention": [
+      "Use insecticide-treated bed nets (ITNs)",
+      "Indoor residual spraying where available",
+      "Drain or cover stagnant water near homes",
+      "Prompt testing and treatment of cases to reduce transmission"
+    ],
+    "treatment": [
+      "Prompt diagnosis (rapid diagnostic test / microscopy) and effective antimalarial therapy (as per national guidelines)",
+      "Supportive care for fever and dehydration",
+      "Refer severe cases to a facility for parenteral therapy and monitoring"
+    ],
+    "advice": [
+      "If fever occurs, test for malaria immediately and seek treatment if positive",
+      "Seek urgent care for danger signs (difficulty breathing, seizures, unconsciousness)"
+    ],
+    "malawi_context": [
+      "Seek care at the nearest health centre or district hospital; Health Surveillance Assistants (HSAs) provide community-level support and referral.",
+      "Follow Malawi Ministry of Health guidance for first-line antimalarials and case management."
+    ],
+    "sources": ["WHO malaria fact sheet", "WHO malaria overview"]
+  },
+  {
+    "disease": "HIV/AIDS",
+    "signs": [
+      "Early: fever, weight loss, persistent swollen lymph nodes",
+      "Advanced: chronic infections, opportunistic infections, wasting",
+      "Danger signs: severe weight loss, persistent high fever, severe breathing difficulty"
+    ],
+    "causes": [
+      "Infection with the human immunodeficiency virus (HIV) transmitted via unprotected sex, contaminated blood, shared needles, or mother-to-child transmission"
+    ],
+    "prevention": [
+      "Consistent use of condoms",
+      "Safe blood and injection practices",
+      "Testing and treatment of pregnant women to prevent mother-to-child transmission",
+      "Needle-safety programs and harm reduction"
+    ],
+    "treatment": [
+      "Antiretroviral therapy (ART) as per national guidelines to suppress viral load",
+      "Prophylaxis and treatment for opportunistic infections",
+      "Adherence support and linkage to care"
+    ],
+    "advice": [
+      "Continue ART unless advised by a clinician; do not stop therapy without consulting healthcare provider",
+      "Test if exposed or symptomatic; pregnant women should access antenatal services with HIV testing and treatment"
+    ],
+    "malawi_context": [
+      "HSAs and ART clinics at health centres/district hospitals provide testing, linkage to ART, and follow-up.",
+      "Malawi has national ART programs—follow local protocols for registration and drug pick-up."
+    ],
+    "sources": ["WHO HIV factsheets", "Local Ministry of Health ART guidance"]
+  },
+  {
+    "disease": "Tuberculosis (TB)",
+    "signs": [
+      "Persistent cough for 2+ weeks",
+      "Weight loss, night sweats, fever",
+      "Danger signs: severe respiratory distress, haemoptysis, severe weakness"
+    ],
+    "causes": [
+      "Bacterial infection (Mycobacterium tuberculosis) spread by airborne droplets from a person with pulmonary TB"
+    ],
+    "prevention": [
+      "Early diagnosis and treatment of active cases (reduces transmission)",
+      "Good ventilation in homes and public spaces",
+      "BCG vaccination for infants as per schedule"
+    ],
+    "treatment": [
+      "Standard multi-drug TB therapy under direct observation / national TB program (first-line and second-line for resistant TB)",
+      "Complete full course; monitor for side effects and adherence"
+    ],
+    "advice": [
+      "If cough persists more than 2 weeks, seek testing at a health centre",
+      "Inform contacts and seek testing for household members"
+    ],
+    "malawi_context": [
+      "TB diagnosis and treatment are available through health centres and district hospitals; follow the Malawi National TB Program for regimens and follow-up."
+    ],
+    "sources": ["WHO TB guidance", "National TB program materials"]
+  },
+  {
+    "disease": "Cholera",
+    "signs": [
+      "Acute watery diarrhea (often profuse)",
+      "Vomiting",
+      "Rapid dehydration and thirst",
+      "Danger signs: sunken eyes, dry mouth, low urine output, lethargy"
+    ],
+    "causes": [
+      "Bacterial infection (Vibrio cholerae) from contaminated water or food"
+    ],
+    "prevention": [
+      "Drink and use safe water (boil or treat), practice hand hygiene",
+      "Ensure safe food handling and sanitation",
+      "Vaccination in outbreak-prone areas where recommended"
+    ],
+    "treatment": [
+      "Rapid rehydration with oral rehydration solution (ORS) for most cases",
+      "Intravenous fluids for severe dehydration; antibiotics for severe cases as per guidelines",
+      "Monitor electrolytes and refer if severe"
+    ],
+    "advice": [
+      "Seek urgent care for signs of dehydration",
+      "Improve household water, sanitation, and hygiene practices"
+    ],
+    "malawi_context": [
+      "During outbreaks, local health authorities provide cholera treatment centres and mass communication on safe water and sanitation."
+    ],
+    "sources": ["WHO cholera guidance", "Local outbreak response materials"]
+  },
+  {
+    "disease": "Diabetes",
+    "signs": [
+      "Excessive thirst, frequent urination, fatigue, unexplained weight loss",
+      "Long-term: poor wound healing, vision changes, neuropathy"
+    ],
+    "causes": [
+      "Type 1: autoimmune destruction of insulin-producing cells; Type 2: insulin resistance and relative insulin deficiency; lifestyle and genetic factors"
+    ],
+    "prevention": [
+      "Healthy diet and regular physical activity (especially for Type 2)",
+      "Maintain healthy weight, avoid tobacco use"
+    ],
+    "treatment": [
+      "Blood sugar monitoring, lifestyle measures, oral hypoglycemic agents or insulin as per clinician",
+      "Regular follow-up for complications (eyes, kidneys, feet)"
+    ],
+    "advice": [
+      "If symptoms suggest high blood sugar, check at a clinic; maintain medication adherence",
+      "Attend routine screening for complications"
+    ],
+    "malawi_context": [
+      "Chronic disease clinics in health centres/district hospitals provide follow-up and medicines; screening programs may be available through primary care."
+    ],
+    "sources": ["WHO diabetes information"]
+  },
+  {
+    "disease": "Hypertension",
+    "signs": [
+      "Often asymptomatic",
+      "Possible headaches, dizziness; danger signs include chest pain, shortness of breath, sudden weakness (stroke signs)"
+    ],
+    "causes": [
+      "Multifactorial: diet high in salt, obesity, sedentary lifestyle, age, genetics, kidney disease"
+    ],
+    "prevention": [
+      "Reduce salt intake, maintain healthy weight, exercise, avoid tobacco and excess alcohol"
+    ],
+    "treatment": [
+      "Lifestyle modification and antihypertensive medicines as prescribed; regular blood pressure monitoring"
+    ],
+    "advice": [
+      "Regular check-ups since hypertension is often silent; seek care for extremely high readings or stroke symptoms"
+    ],
+    "malawi_context": [
+      "Primary care clinics offer BP screening and medication; community screening events may be organized by health programmes."
+    ],
+    "sources": ["WHO hypertension materials"]
+  },
+  {
+    "disease": "Pneumonia",
+    "signs": [
+      "Cough, difficulty breathing, chest pain, fever",
+      "In children: fast breathing and lower chest wall indrawing are key danger signs"
+    ],
+    "causes": [
+      "Viruses or bacteria (e.g., Streptococcus pneumoniae), sometimes fungi"
+    ],
+    "prevention": [
+      "Vaccination (where available), hand hygiene, breastfeeding for infants, reduce indoor air pollution"
+    ],
+    "treatment": [
+      "Antibiotics for suspected bacterial pneumonia per guidelines, supportive oxygen therapy for severe cases, hydration and fever control",
+      "Refer severe cases for oxygen and inpatient care"
+    ],
+    "advice": [
+      "Seek immediate care for fast breathing, inability to feed, chest indrawing, or extreme lethargy"
+    ],
+    "malawi_context": [
+      "Integrated management of childhood illness (IMCI) guidelines used at primary care; HSAs and clinics assess fast breathing and refer as needed."
+    ],
+    "sources": ["WHO pneumonia fact sheet", "CDC pneumonia guidance"]
+  },
+  {
+    "disease": "Typhoid",
+    "signs": [
+      "Fever, abdominal pain, headache, weakness",
+      "Danger signs: severe abdominal pain, persistent high fever, suspected intestinal perforation"
+    ],
+    "causes": [
+      "Bacterial infection (Salmonella enterica serotype Typhi) via contaminated food/water"
+    ],
+    "prevention": [
+      "Safe water and food hygiene, handwashing, vaccination in high-risk settings"
+    ],
+    "treatment": [
+      "Appropriate antibiotics guided by local resistance patterns; supportive care for dehydration and complications"
+    ],
+    "advice": [
+      "Seek clinic care for persistent fever or severe abdominal pain"
+    ],
+    "malawi_context": [
+      "Follow local antibiotic guidelines and public-health measures to control outbreaks."
+    ],
+    "sources": ["WHO typhoid information", "Local public health guidance"]
+  },
+  {
+    "disease": "COVID-19",
+    "signs": [
+      "Fever, cough, sore throat, shortness of breath, loss of taste/smell",
+      "Danger signs: severe difficulty breathing, persistent chest pain, confusion"
+    ],
+    "causes": [
+      "SARS-CoV-2 virus transmitted via respiratory droplets and aerosols"
+    ],
+    "prevention": [
+      "Vaccination, mask-wearing in high-risk settings, hand hygiene, isolation if symptomatic"
+    ],
+    "treatment": [
+      "Supportive care; oxygen therapy for severe disease; follow national treatment protocols for antivirals in indicated cases"
+    ],
+    "advice": [
+      "Test and isolate if symptomatic or exposed as per local guidance; seek urgent care for breathing difficulties"
+    ],
+    "malawi_context": [
+      "Malawi adopted national COVID-19 guidelines for testing, case management and vaccination campaigns (follow current MoH guidance)."
+    ],
+    "sources": ["WHO COVID-19 resources", "National COVID-19 guidance"]
+  },
+  {
+    "disease": "Asthma",
+    "signs": [
+      "Recurrent wheeze, cough, chest tightness, shortness of breath",
+      "Danger signs: severe breathlessness at rest, inability to speak, cyanosis"
+    ],
+    "causes": [
+      "Chronic airway inflammation triggered by allergens, infections, exercise, smoke, cold air"
+    ],
+    "prevention": [
+      "Identify and avoid triggers (smoke, allergens), ensure adherence to preventive inhaled therapy where indicated"
+    ],
+    "treatment": [
+      "Short-acting bronchodilators for relief; inhaled corticosteroids for control; emergency treatment with oxygen and systemic steroids for severe attacks"
+    ],
+    "advice": [
+      "Have an action plan and seek urgent care for severe attacks or poor response to reliever inhalers"
+    ],
+    "malawi_context": [
+      "Access to inhalers and spacers may be limited—work with primary care clinics for supply and education; avoid indoor smoke exposure."
+    ],
+    "sources": ["WHO asthma guidance"]
+  },
+  {
+    "disease": "Diarrhea",
+    "signs": [
+      "Frequent loose or watery stools, abdominal cramps, dehydration",
+      "Danger signs: inability to drink, sunken eyes, lethargy, blood in stool"
+    ],
+    "causes": [
+      "Often infections (rotavirus, bacteria, parasites) or poor hygiene and unsafe water"
+    ],
+    "prevention": [
+      "Safe water and sanitation, handwashing, breastfeeding, vaccination (e.g., rotavirus), safe food handling"
+    ],
+    "treatment": [
+      "Oral rehydration solution (ORS) to prevent/treat dehydration, zinc supplementation for children, antibiotics only when indicated"
+    ],
+    "advice": [
+      "Seek urgent care for dehydration signs; continue feeding and breastfeeding during diarrhea"
+    ],
+    "malawi_context": [
+      "HSAs and clinics provide ORS/zinc; growth monitoring and nutrition counselling available at health centres."
+    ],
+    "sources": ["WHO diarrhea guidance", "UNICEF child health materials"]
+  },
+  {
+    "disease": "Hepatitis B",
+    "signs": [
+      "Jaundice (yellowing of skin/eyes), dark urine, fatigue, abdominal pain",
+      "Chronic infection may be asymptomatic for years"
+    ],
+    "causes": [
+      "Infection with hepatitis B virus transmitted via blood, sexual contact, or mother-to-child"
+    ],
+    "prevention": [
+      "Vaccination (birth dose and follow-up doses), safe injection and blood practices, screening of pregnant women"
+    ],
+    "treatment": [
+      "Antiviral therapy for chronic hepatitis B per guidelines; monitoring of liver function"
+    ],
+    "advice": [
+      "Seek testing if exposed or symptomatic; pregnant women should be screened for hepatitis B"
+    ],
+    "malawi_context": [
+      "Hepatitis B vaccination included in many national immunization schedules; follow MoH guidance for testing and treatment referral."
+    ],
+    "sources": ["WHO hepatitis B information"]
+  },
+  {
+    "disease": "Jaundice",
+    "signs": [
+      "Yellowing of skin and eyes, dark urine, pale stools, abdominal pain",
+      "Danger signs: signs of liver failure (confusion, bleeding), high fever with jaundice"
+    ],
+    "causes": [
+      "Many causes including viral hepatitis (A, B, C), hemolysis, neonatal jaundice, and liver disease"
+    ],
+    "prevention": [
+      "Vaccination for hepatitis A/B where available, safe food and water, good newborn care to prevent severe neonatal jaundice"
+    ],
+    "treatment": [
+      "Depends on cause: supportive care for liver disease, phototherapy for neonatal jaundice, antivirals for some hepatitis infections"
+    ],
+    "advice": [
+      "Seek prompt assessment for new-onset jaundice, especially in newborns or if accompanied by fever or confusion"
+    ],
+    "malawi_context": [
+      "Newborns with jaundice should be assessed quickly at a health facility for phototherapy or referral."
+    ],
+    "sources": ["WHO hepatitis and neonatal care resources"]
+  },
+  {
+    "disease": "Arthritis",
+    "signs": [
+      "Joint pain, stiffness (especially morning stiffness), reduced range of motion, swelling",
+      "Danger signs: sudden severe joint swelling, fever with joint pain (possible infection)"
+    ],
+    "causes": [
+      "Various causes: osteoarthritis (wear-and-tear), rheumatoid arthritis (autoimmune), infections"
+    ],
+    "prevention": [
+      "Maintain healthy weight, regular exercise, injury prevention"
+    ],
+    "treatment": [
+      "Pain control (paracetamol, NSAIDs where appropriate), physiotherapy, disease-modifying agents for inflammatory arthritis under specialist care"
+    ],
+    "advice": [
+      "Seek assessment for severe or rapidly worsening joint pain, or signs of infection"
+    ],
+    "malawi_context": [
+      "Primary care can provide pain management and referral to higher-level services for specialized care."
+    ],
+    "sources": ["WHO musculoskeletal health resources"]
+  },
+  {
+    "disease": "Meningitis",
+    "signs": [
+      "Fever, severe headache, stiff neck, sensitivity to light, altered consciousness",
+      "In children: poor feeding, irritability, bulging fontanelle (infants)"
+    ],
+    "causes": [
+      "Viral, bacterial, or fungal infections causing inflammation of membranes around brain and spinal cord"
+    ],
+    "prevention": [
+      "Vaccination for common bacterial causes (e.g., Hib, pneumococcus, meningococcus) where available",
+      "Prompt treatment of infections"
+    ],
+    "treatment": [
+      "Urgent medical care; bacterial meningitis requires prompt intravenous antibiotics and supportive care"
+    ],
+    "advice": [
+      "Seek emergency care immediately for fever with neck stiffness or altered behaviour"
+    ],
+    "malawi_context": [
+      "Suspected meningitis is a medical emergency—go to the nearest district hospital or referral facility for rapid treatment."
+    ],
+    "sources": ["WHO meningitis guidance"]
+  },
+  {
+    "disease": "Urinary Tract Infection (UTI)",
+    "signs": [
+      "Painful or frequent urination, urgency, cloudy or strong-smelling urine, lower abdominal pain",
+      "Danger signs: fever, flank pain, vomiting (possible upper UTI/pyelonephritis)"
+    ],
+    "causes": [
+      "Bacterial infection, often E. coli, spreading into urinary tract"
+    ],
+    "prevention": [
+      "Good perineal hygiene, adequate hydration, prompt treatment of bladder infections"
+    ],
+    "treatment": [
+      "Appropriate antibiotics as per local guidelines; drink fluids and seek care if symptoms worsen"
+    ],
+    "advice": [
+      "Seek clinic care for fever or inability to pass urine; pregnant women with UTI need prompt treatment"
+    ],
+    "malawi_context": [
+      "Primary clinics can diagnose and treat UTIs; laboratory tests may be available at higher-level facilities."
+    ],
+    "sources": ["WHO clinical guidance on UTIs"]
+  },
+  {
+    "disease": "Measles",
+    "signs": [
+      "Fever, cough, coryza (runny nose), conjunctivitis, followed by rash",
+      "Danger signs: dehydration, pneumonia, encephalitis"
+    ],
+    "causes": [
+      "Measles virus transmitted via respiratory droplets"
+    ],
+    "prevention": [
+      "Measles vaccination according to national immunization schedule",
+      "High vaccine coverage to prevent outbreaks"
+    ],
+    "treatment": [
+      "Supportive care: hydration, vitamin A supplementation for children, treating complications"
+    ],
+    "advice": [
+      "Seek care for high fever, difficulty breathing, or signs of dehydration"
+    ],
+    "malawi_context": [
+      "Follow Malawi immunization schedule; during outbreaks, health authorities run vaccination campaigns and case management protocols."
+    ],
+    "sources": ["WHO measles guidance", "UNICEF immunization materials"]
+  },
+  {
+    "disease": "Fungal Infection",
+    "signs": [
+      "Skin: itching, rash, discoloration; Nails: thickening or discoloration; Systemic: depends on organ involved"
+    ],
+    "causes": [
+      "Overgrowth of fungi on skin or inside body; dermatophytes, yeasts (Candida), or systemic fungi"
+    ],
+    "prevention": [
+      "Keep skin clean and dry, avoid sharing personal items, good hygiene"
+    ],
+    "treatment": [
+      "Topical or oral antifungal medications depending on severity and location"
+    ],
+    "advice": [
+      "Seek care for persistent or spreading skin infections or signs of systemic illness"
+    ],
+    "malawi_context": [
+      "Primary care treats common fungal skin infections; severe or systemic infections require referral."
+    ],
+    "sources": ["WHO/clinical dermatology resources"]
+  },
+  {
+    "disease": "Migraine",
+    "signs": [
+      "Recurrent severe headache often with nausea, vomiting, sensitivity to light or sound"
+    ],
+    "causes": [
+      "Complex neurological disorder with genetic and environmental triggers"
+    ],
+    "prevention": [
+      "Identify and avoid triggers, regular sleep, stress management, lifestyle measures"
+    ],
+    "treatment": [
+      "Acute analgesics (paracetamol, NSAIDs) and antiemetics; preventive drugs for frequent attacks under clinician supervision"
+    ],
+    "advice": [
+      "Seek care for new severe headaches, changes in pattern, or focal neurological signs"
+    ],
+    "malawi_context": [
+      "Primary care provides initial management and referral for specialist evaluation when needed."
+    ],
+    "sources": ["WHO headache/migraine resources"]
+  },
+  {
+    "disease": "Skin Infection",
+    "signs": [
+      "Redness, swelling, warmth, pus, pain for bacterial infections; rash, itching for others"
+    ],
+    "causes": [
+      "Bacterial, viral, or fungal organisms entering the skin through cuts or breaks, poor hygiene, insect bites"
+    ],
+    "prevention": [
+      "Clean wounds, good hygiene, avoid sharing personal items"
+    ],
+    "treatment": [
+      "Clean and dress wounds; topical or oral antibiotics/antifungals as indicated; seek care for spreading infection"
+    ],
+    "advice": [
+      "Seek care for rapidly spreading redness, fever, severe pain, or pus"
+    ],
+    "malawi_context": [
+      "Community health workers can treat minor infections; refer severe cases to clinics."
+    ],
+    "sources": ["Clinical skin infection guidance"]
+  },
+  {
+    "disease": "Common Cold",
+    "signs": [
+      "Sneezing, blocked or runny nose, sore throat, mild cough, low-grade fever"
+    ],
+    "causes": [
+      "Mostly caused by rhinoviruses and other respiratory viruses"
+    ],
+    "prevention": [
+      "Handwashing, cough etiquette, avoid close contact with sick people"
+    ],
+    "treatment": [
+      "Supportive care: rest, fluids, symptomatic relief (paracetamol for fever/pain)"
+    ],
+    "advice": [
+      "Seek care if high fever develops, breathing difficulty, or symptoms persist beyond 7 days"
+    ],
+    "malawi_context": [
+      "Self-care at home for mild illness; seek clinic care for high-risk people (infants, elderly, people with chronic disease)."
+    ],
+    "sources": ["WHO/respiratory infection guidance"]
+  },
+  {
+    "disease": "Flu (Influenza)",
+    "signs": [
+      "Fever, body aches, headache, cough, sore throat, chills"
+    ],
+    "causes": [
+      "Influenza viruses spread by respiratory droplets"
+    ],
+    "prevention": [
+      "Hand hygiene, respiratory etiquette, vaccination where available"
+    ],
+    "treatment": [
+      "Supportive care; antivirals for high-risk or severe cases per national guidance"
+    ],
+    "advice": [
+      "Seek care for difficulty breathing, chest pain, or severe weakness"
+    ],
+    "malawi_context": [
+      "Seasonal influenza surveillance and vaccination policies vary—follow Malawi MoH recommendations."
+    ],
+    "sources": ["WHO influenza information"]
+  },
+  {
+    "disease": "Malnutrition (Child)",
+    "signs": [
+      "Underweight, wasting (low weight-for-height), stunting (low height-for-age), swollen feet (edema), poor appetite"
+    ],
+    "causes": [
+      "Inadequate dietary intake, repeated infections, poor maternal nutrition, food insecurity"
+    ],
+    "prevention": [
+      "Exclusive breastfeeding for 6 months, appropriate complementary feeding, micronutrient supplementation, food security and dietary diversity"
+    ],
+    "treatment": [
+      "Community-based management of acute malnutrition (therapeutic feeding for severe wasting), nutritional rehabilitation, treat infections and provide micronutrients"
+    ],
+    "advice": [
+      "Attend growth monitoring and seek prompt care for weight loss or poor feeding"
+    ],
+    "malawi_context": [
+      "UNICEF/WHO-backed nutrition programs operate with MoH—HSAs support growth monitoring and referrals for therapeutic feeding centres where needed."
+    ],
+    "sources": ["WHO malnutrition fact sheet", "UNICEF malnutrition data"]
+  },
+  {
+    "disease": "Hepatitis (general reference included under Hepatitis B)",
+    "signs": [
+      "Jaundice, fatigue, abdominal pain, dark urine"
+    ],
+    "causes": [
+      "Viral hepatitis (A, B, C), toxins, alcohol"
+    ],
+    "prevention": [
+      "Vaccination for hepatitis A/B, safe water/sanitation, safe blood practices"
+    ],
+    "treatment": [
+      "Supportive care and antiviral therapy when indicated"
+    ],
+    "advice": [
+      "Test and seek clinician care for persistent jaundice or risk exposures"
+    ],
+    "malawi_context": [
+      "Follow national immunization and screening schedules; refer chronic cases to specialist clinics."
+    ],
+    "sources": ["WHO hepatitis resources"]
+  },
+  {
+    "disease": "Typhoid (duplicate consolidated above)",
+    "signs": [
+      "Fever, abdominal pain, headache, weakness"
+    ],
+    "causes": [
+      "Salmonella Typhi infection via contaminated food/water"
+    ],
+    "prevention": [
+      "Safe water, food hygiene, vaccination where recommended"
+    ],
+    "treatment": [
+      "Antibiotic therapy guided by local resistance patterns; rehydration and monitoring"
+    ],
+    "advice": [
+      "Seek clinic care for persistent fever or severe abdominal pain"
+    ],
+    "malawi_context": [
+      "Follow MoH outbreak response protocols and antibiotic recommendations."
+    ],
+    "sources": ["WHO typhoid guidance"]
+  },
+  {
+    "disease": "Urinary Tract Infection (UTI) (duplicate consolidated above)",
+    "signs": [
+      "Painful urination, frequent urination, cloudy/strong urine"
+    ],
+    "causes": [
+      "Bacterial infection, often E. coli"
+    ],
+    "prevention": [
+      "Hydration, perineal hygiene, prompt treatment"
+    ],
+    "treatment": [
+      "Antibiotics as indicated"
+    ],
+    "advice": [
+      "Pregnant women with UTI need urgent treatment; seek clinic care if fever or flank pain present"
+    ],
+    "malawi_context": [
+      "Primary care evaluation and treatment available; laboratory testing at higher-level facilities."
+    ],
+    "sources": ["WHO clinical guidance"]
+  },
+  {
+    "disease": "Measles (duplicate consolidated above)",
+    "signs": [
+      "Fever, cough, conjunctivitis, rash"
+    ],
+    "causes": [
+      "Measles virus"
+    ],
+    "prevention": [
+      "Measles vaccine per immunization schedule"
+    ],
+    "treatment": [
+      "Supportive care including vitamin A for children"
+    ],
+    "advice": [
+      "Seek care for high fever or breathing difficulty"
+    ],
+    "malawi_context": [
+      "Vaccination campaigns and routine immunization delivered through health centres."
+    ],
+    "sources": ["WHO measles guidance"]
+  },
+  {
+    "disease": "Pneumonia (duplicate consolidated above)",
+    "signs": [
+      "Cough, fast breathing, chest indrawing, fever"
+    ],
+    "causes": [
+      "Bacteria or viruses (e.g., pneumococcus, influenza)"
+    ],
+    "prevention": [
+      "Vaccination, breastfeeding, hand hygiene"
+    ],
+    "treatment": [
+      "Antibiotics for bacterial pneumonia, oxygen for severe cases"
+    ],
+    "advice": [
+      "Urgent assessment for chest indrawing, inability to feed, or severe breathing difficulty"
+    ],
+    "malawi_context": [
+      "IMCI and facility-based protocols guide assessment and referral."
+    ],
+    "sources": ["WHO pneumonia fact sheet", "CDC pneumonia guidance"]
+  },
+  {
+    "disease": "Fungal Infection (duplicate consolidated above)",
+    "signs": [
+      "Itching, rash, discoloration"
+    ],
+    "causes": [
+      "Dermatophytes, yeasts, environmental fungi"
+    ],
+    "prevention": [
+      "Good hygiene, keep skin dry"
+    ],
+    "treatment": [
+      "Topical/oral antifungals as needed"
+    ],
+    "advice": [
+      "Visit clinic for persistent infections"
+    ],
+    "malawi_context": [
+      "Primary care management with referral for systemic disease."
+    ],
+    "sources": ["Clinical dermatology resources"]
+  },
+  {
+    "disease": "Migraine (duplicate consolidated above)",
+    "signs": [
+      "Severe recurrent headache, nausea, light sensitivity"
+    ],
+    "causes": [
+      "Neurological disorder with triggers"
+    ],
+    "prevention": [
+      "Trigger management, stress reduction"
+    ],
+    "treatment": [
+      "Symptomatic medications; preventive therapy if frequent"
+    ],
+    "advice": [
+      "Seek care for new severe headaches or change in pattern"
+    ],
+    "malawi_context": [
+      "Primary care for initial management and referral when necessary."
+    ],
+    "sources": ["WHO headache/migraine guidance"]
+  },
+  {
+    "disease": "Skin Infection (duplicate consolidated above)",
+    "signs": [
+      "Redness, swelling, pus, itching"
+    ],
+    "causes": [
+      "Bacterial, fungal, viral infections"
+    ],
+    "prevention": [
+      "Clean wounds, hygiene"
+    ],
+    "treatment": [
+      "Topical/oral antimicrobials as indicated"
+    ],
+    "advice": [
+      "Seek care for spreading infections or systemic signs"
+    ],
+    "malawi_context": [
+      "Community-level management for minor infections; refer severe cases."
+    ],
+    "sources": ["Clinical guidelines"]
+  },
+  {
+    "disease": "Common Cold (duplicate consolidated above)",
+    "signs": [
+      "Sneezing, blocked/runny nose, sore throat"
+    ],
+    "causes": [
+      "Rhinoviruses and other respiratory viruses"
+    ],
+    "prevention": [
+      "Hand hygiene, cough etiquette"
+    ],
+    "treatment": [
+      "Supportive care: rest and fluids"
+    ],
+    "advice": [
+      "Seek care if breathing difficulty or prolonged fever"
+    ],
+    "malawi_context": [
+      "Self-care for mild cases; clinic care for high-risk individuals."
+    ],
+    "sources": ["WHO respiratory infection resources"]
+  },
+  {
+    "disease": "Influenza (duplicate consolidated above)",
+    "signs": [
+      "Fever, body aches, cough"
+    ],
+    "causes": [
+      "Influenza viruses"
+    ],
+    "prevention": [
+      "Vaccination, hygiene"
+    ],
+    "treatment": [
+      "Supportive care; antivirals as per guidelines"
+    ],
+    "advice": [
+      "Seek care if severe or high-risk"
+    ],
+    "malawi_context": [
+      "Follow MoH seasonal influenza guidance."
+    ],
+    "sources": ["WHO influenza information"]
+  },
+  {
+    "disease": "Malnutrition (duplicate consolidated above)",
+    "signs": [
+      "Wasting, stunting, edema, poor feeding"
+    ],
+    "causes": [
+      "Insufficient nutrient intake, frequent infections"
+    ],
+    "prevention": [
+      "Breastfeeding, diverse diets, micronutrient programs"
+    ],
+    "treatment": [
+      "Therapeutic feeding for severe cases; treat infections"
+    ],
+    "advice": [
+      "Attend growth monitoring and seek referral for severe wasting"
+    ],
+    "malawi_context": [
+      "Nutrition programs run by MoH, UNICEF support, HSAs for screening and referral."
+    ],
+    "sources": ["WHO malnutrition fact sheet", "UNICEF nutrition data"]
+  },
+  {
+    "disease": "Hepatitis B (duplicate consolidated above)",
+    "signs": [
+      "Jaundice, fatigue, abdominal pain"
+    ],
+    "causes": [
+      "Hepatitis B virus"
+    ],
+    "prevention": [
+      "Vaccination and safe blood/injection practices"
+    ],
+    "treatment": [
+      "Antivirals for chronic infection"
+    ],
+    "advice": [
+      "Screen pregnant women and treat per national guidelines"
+    ],
+    "malawi_context": [
+      "Follow national immunization schedule and screening programs."
+    ],
+    "sources": ["WHO hepatitis resources"]
+  },
+  {
+    "disease": "Typhoid (final consolidated)",
+    "signs": [
+      "Fever, abdominal pain, headache"
+    ],
+    "causes": [
+      "Salmonella Typhi from contaminated food/water"
+    ],
+    "prevention": [
+      "Safe water and food handling"
+    ],
+    "treatment": [
+      "Antibiotics as per local guidance"
+    ],
+    "advice": [
+      "Seek care for persistent fever"
+    ],
+    "malawi_context": [
+      "Follow MoH guidance for typhoid outbreaks and treatment."
+    ],
+    "sources": ["WHO typhoid guidance"]
+  },
+  {
+    "disease": "Urinary Tract Infection (UTI) (final consolidated)",
+    "signs": [
+      "Painful urination, frequent urination"
+    ],
+    "causes": [
+      "Bacterial infection (commonly E. coli)"
+    ],
+    "prevention": [
+      "Hydration and hygiene"
+    ],
+    "treatment": [
+      "Antibiotics as indicated"
+  ],
+    "advice": [
+      "Pregnant women should seek prompt treatment"
+    ],
+    "malawi_context": [
+      "Primary care diagnosis and treatment available."
+    ],
+    "sources": ["WHO clinical guidance"]
+  },
+  {
+    "disease": "Malaria",
+    "signs": ["Sudden high fever, often cyclical (chills, then fever, then sweating)", "Severe headache", "Nausea and vomiting", "Muscle aches and fatigue", "Rapid breathing and pulse", "In severe cases: confusion, seizures, coma (cerebral malaria)", "Jaundice (yellowing of skin and eyes) due to loss of red blood cells"],
+    "causes": ["Infection with Plasmodium parasites (P. falciparum is most common and dangerous in Africa)", "Bite from an infected female Anopheles mosquito", "Mother-to-child transmission during pregnancy or birth (congenital malaria)", "Rarely, through blood transfusion or shared needles"],
+    "prevention": ["Consistent use of Long-Lasting Insecticidal Nets (LLINs)", "Indoor Residual Spraying (IRS) of insecticides", "Wearing long-sleeved clothing and using repellents, especially at dusk and dawn", "Taking antimalarial prophylaxis for pregnant women (Intermittent Preventive Treatment - IPTp)", "Removing or treating standing water sources around the home"],
+    "treatment": ["Artemisinin-based Combination Therapy (ACT) is first-line treatment (e.g., Artemether-Lumefantrine)", "Prompt diagnosis via Rapid Diagnostic Test (RDT) or blood smear microscopy", "Severe malaria requires injectable artesunate and hospital care for complications", "Paracetamol for fever; avoid aspirin"],
+    "advice": ["Malaria is a medical emergency, especially in children and pregnant women. Seek treatment within 24 hours of symptom onset.", "Complete the full course of ACT even if symptoms improve to prevent recurrence and drug resistance.", "Ensure your net has no holes and is properly tucked in every night."],
+    "malawi_context": ["Malaria is hyperendemic and a leading cause of morbidity and mortality, particularly among children under 5 and pregnant women.", "The Ministry of Health and partners conduct mass LLIN distribution campaigns every few years.", "Community Health Workers are trained to test and treat uncomplicated malaria at the village level, improving access."]
+  },
+  {
+    "disease": "HIV/AIDS",
+    "signs": ["Acute HIV (2-4 weeks post-infection): Fever, sore throat, rash, swollen lymph nodes", "Clinical Latency Stage: Often asymptomatic for years", "Symptomatic HIV: Persistent fever, night sweats, chronic diarrhea, rapid weight loss (wasting)", "Opportunistic Infections: Oral thrush, shingles, persistent herpes, tuberculosis, severe pneumonia", "AIDS-Defining Illnesses: Kaposi's sarcoma, cryptococcal meningitis, certain lymphomas"],
+    "causes": ["Human Immunodeficiency Virus (HIV) infection", "Unprotected sexual intercourse with an infected person", "Sharing contaminated needles and syringes", "Mother-to-child transmission during pregnancy, childbirth, or breastfeeding", "Transfusion with infected blood products (now rare due to screening)"],
+    "prevention": ["Consistent and correct use of condoms during sex", "Voluntary Medical Male Circumcision (VMMC) reduces female-to-male transmission risk", "Pre-Exposure Prophylaxis (PrEP) for high-risk individuals", "Using sterile needles and equipment", "Prevention of Mother-To-Child Transmission (PMTCT) programs involving antiretroviral therapy (ART)"],
+    "treatment": ["Antiretroviral Therapy (ART) is lifelong. It involves a combination of drugs from different classes.", "ART suppresses the virus, allowing the immune system to recover and preventing progression to AIDS.", "Treatment of opportunistic infections as they occur.", "Nutritional support to manage wasting."],
+    "advice": ["Know your status through regular testing. Silence and stigma fuel the epidemic.", "If positive, start ART immediately and adhere to it perfectly to live a long, healthy life and prevent transmission.", "If negative, use prevention methods consistently to stay negative."],
+    "malawi_context": ["Malawi has a high HIV prevalence, though significant progress has been made.", "The 'Test and Treat' policy means anyone testing positive starts ART immediately, regardless of CD4 count.", "PMTCT programs are widely available, dramatically reducing transmission to newborns.", "Stigma remains a significant barrier to testing and adherence."]
+  },
+  {
+    "disease": "Tuberculosis (TB)",
+    "signs": ["Persistent cough for more than 2 weeks (sometimes with blood)", "Chest pain", "Unintentional weight loss and loss of appetite", "Fever and night sweats", "Fatigue and weakness", "In Extrapulmonary TB: Swollen lymph nodes, back pain (spinal TB), confusion (TB meningitis)"],
+    "causes": ["Infection with the bacterium Mycobacterium tuberculosis", "Inhaling droplets from the cough or sneeze of an infected person", "People with weakened immune systems (e.g., HIV) are at much higher risk of active TB"],
+    "prevention": ["Bacille Calmette-Guérin (BCG) vaccination in childhood (protects against severe forms in children)", "Early diagnosis and complete treatment of active TB cases to stop transmission", "Preventive Therapy (TPT) for people living with HIV and contacts of TB patients", "Good ventilation in living and working spaces"],
+    "treatment": ["A multi-drug regimen for 6+ months. First-line drugs include Isoniazid, Rifampicin, Pyrazinamide, and Ethambutol.", "Directly Observed Therapy (DOT) is recommended to ensure adherence and prevent drug resistance.", "Drug-Resistant TB (MDR/RR-TB) requires longer, more complex, and more expensive regimens."],
+    "advice": ["Complete the full course of treatment. Stopping early leads to relapse and drug-resistant TB, which is harder and costlier to treat.", "Cover your mouth and nose when coughing or sneezing.", "If you have a chronic cough, get tested for TB, especially if you are HIV-positive."],
+    "malawi_context": ["TB is a major public health problem, heavily linked with the HIV epidemic.", "Integrated HIV/TB services are common, with testing for both offered together.", "GeneXpert machines are used for rapid molecular diagnosis, which also tests for Rifampicin resistance.", "Community DOT supporters help patients adhere to treatment."]
+  },
+  {
+    "disease": "Cholera",
+    "signs": ["Profuse, watery diarrhea often described as 'rice-water stools'", "Rapid dehydration", "Vomiting", "Muscle cramps due to electrolyte loss", "In severe cases: Sunken eyes, loss of skin elasticity, low blood pressure, shock"],
+    "causes": ["Infection with the bacterium Vibrio cholerae", "Drinking water or eating food contaminated with the feces of an infected person", "Often linked to inadequate sanitation and poor hygiene"],
+    "prevention": ["Drink safe, treated water (boiled, chlorinated, or bottled)", "Practice frequent handwashing with soap and clean water, especially after using the toilet and before eating", "Use proper sanitation facilities; avoid open defecation", "Eat thoroughly cooked food and peel fruits and vegetables yourself", "Oral Cholera Vaccines (OCV) in outbreak situations"],
+    "treatment": ["Rapid Rehydration is the cornerstone of treatment. Oral Rehydration Solution (ORS) for mild/moderate cases.", "Intravenous (IV) fluids (e.g., Ringer's Lactate) for severe dehydration.", "Antibiotics can reduce the duration and volume of diarrhea in severe cases.", "Zinc supplements for children to reduce severity."],
+    "advice": ["Cholera can kill within hours if untreated. Seek medical help immediately at the first sign of severe, watery diarrhea.", "Prepare and use ORS at home at the first sign of diarrhea. Keep packets stocked.", "During an outbreak, be extra vigilant about water and food safety."],
+    "malawi_context": ["Cholera outbreaks occur, especially during the rainy season and in overcrowded areas with poor sanitation.", "The Ministry of Health leads outbreak response, setting up Cholera Treatment Units (CTUs) in affected areas.", "Public health messages on hygiene and water treatment are intensified during outbreaks."]
+  },
+  {
+    "disease": "Hypertension",
+    "signs": ["Often called the 'silent killer' because it may have no obvious symptoms for years", "Severe hypertension may cause: Headaches, shortness of breath, nosebleeds, flushing, dizziness", "Symptoms are often related to long-term damage to organs (heart, kidneys, brain, eyes)"],
+    "causes": ["Primary (Essential) Hypertension: No identifiable cause, develops gradually with age (lifestyle factors: high salt diet, obesity, lack of exercise, alcohol, stress)", "Secondary Hypertension: Caused by an underlying condition (kidney disease, thyroid problems, sleep apnea)"],
+    "prevention": ["Reduce salt (sodium) intake", "Eat a balanced diet rich in fruits and vegetables", "Maintain a healthy weight", "Exercise regularly", "Limit alcohol consumption", "Avoid tobacco use", "Manage stress", "Get regular blood pressure check-ups"],
+    "treatment": ["Lifelong lifestyle modifications are essential.", "Antihypertensive medications (e.g., Thiazide diuretics, ACE inhibitors, Calcium channel blockers) as prescribed.", "Regular monitoring to ensure blood pressure is controlled."],
+    "advice": ["Get your blood pressure checked at least once a year, even if you feel fine.", "Hypertension is a major risk factor for heart attack, stroke, and kidney failure. Take it seriously.", "If prescribed medication, take it consistently. Do not stop because you 'feel fine'."],
+    "malawi_context": ["Hypertension is a growing non-communicable disease (NCD) burden in Malawi, linked to urbanization and changing lifestyles.", "Screening is increasingly integrated into primary healthcare, including HIV clinics.", "Access to affordable, long-term medication can be a challenge for some patients."]
+  },
+  {
+    "disease": "Pneumonia",
+    "signs": ["Cough (may produce phlegm/mucus)", "Fever, sweating, and chills", "Shortness of breath or rapid, shallow breathing", "Chest pain that worsens when breathing or coughing", "Fatigue and loss of appetite", "In infants: Inability to feed, grunting, convulsions, unconsciousness"],
+    "causes": ["Infection inflaming the air sacs in one or both lungs, which may fill with fluid or pus.", "Bacteria (e.g., Streptococcus pneumoniae, Haemophilus influenzae)", "Viruses (e.g., RSV, influenza, SARS-CoV-2)", "Fungi (less common, in immunocompromised individuals)"],
+    "prevention": ["Vaccination: Pneumococcal Conjugate Vaccine (PCV) and Hib vaccine for children; Pneumococcal Polysaccharide Vaccine (PPV) for adults; Influenza vaccine.", "Exclusive breastfeeding for the first 6 months of life.", "Good nutrition to strengthen the immune system.", "Reducing indoor air pollution (e.g., from cooking with solid fuels).", "Handwashing and cough etiquette."],
+    "treatment": ["Bacterial pneumonia: Treated with antibiotics. The choice depends on severity and age.", "Viral pneumonia: Supportive care (rest, fluids, fever control); antibiotics are not effective.", "Oxygen therapy for low blood oxygen levels.", "Hospitalization for severe cases, especially in young children, the elderly, and those with comorbidities."],
+    "advice": ["A cough with high fever and difficulty breathing is a danger sign, especially in children. Seek care immediately.", "Complete the full course of antibiotics if prescribed.", "Ensure children receive all recommended vaccinations on schedule."],
+    "malawi_context": ["Pneumonia is a leading cause of death in children under 5 in Malawi.", "PCV is part of the routine childhood immunization schedule.", "Community-Based Management of Childhood Illness (CBIMCI) trains health workers to diagnose and treat pneumonia at the community level."]
+  },
+  {
+    "disease": "Typhoid",
+    "signs": ["Prolonged high fever that gradually increases", "Headache and general body weakness", "Stomach pain and discomfort", "Constipation or diarrhea (more common in children)", "Rose-colored spots on the chest and abdomen", "Loss of appetite and weight loss"],
+    "causes": ["Infection with the bacterium Salmonella Typhi", "Consuming food or water contaminated with the feces of an infected person or a chronic carrier"],
+    "prevention": ["Drink safe water and use it for brushing teeth and making ice.", "Practice thorough handwashing with soap.", "Eat food that is thoroughly cooked and still hot.", "Avoid raw vegetables and fruits that cannot be peeled.", "Get vaccinated against typhoid fever, especially when traveling to high-risk areas."],
+    "treatment": ["Antibiotics are the only effective treatment (e.g., Ciprofloxacin, Azithromycin, Ceftriaxone). Drug resistance is a problem.", "Rehydration and management of symptoms like fever.", "Severe cases may require hospitalization."],
+    "advice": ["Typhoid fever requires antibiotic treatment; it will not get better on its own.", "Even after recovery, some people become chronic carriers and can spread the bacteria. Follow up with your doctor.", "Be extremely careful with street food and untreated water."],
+    "malawi_context": ["Typhoid is endemic, with outbreaks common in urban and peri-urban areas with water and sanitation challenges.", "Diagnosis can be challenging, often based on clinical signs and the Widal test, which has limitations."]
+  },
+  {
+    "disease": "COVID-19",
+    "signs": ["Fever or chills", "Dry cough", "Shortness of breath or difficulty breathing", "Fatigue", "Muscle or body aches", "Loss of taste or smell", "Sore throat", "Headache", "In severe cases: Pneumonia, acute respiratory distress syndrome"],
+    "causes": ["Infection with the SARS-CoV-2 virus", "Primarily spread through respiratory droplets when an infected person coughs, sneezes, or talks", "Touching contaminated surfaces and then touching the face (less common)"],
+    "prevention": ["Vaccination and booster doses as recommended.", "Wearing well-fitting masks in crowded indoor settings.", "Physical distancing (at least 1 meter).", "Good ventilation in indoor spaces.", "Frequent hand hygiene with soap or alcohol-based sanitizer.", "Covering coughs and sneezes.", "Staying home and testing if you have symptoms."],
+    "treatment": ["Most cases are mild and managed with rest, hydration, and fever reducers (paracetamol).", "For high-risk individuals, antiviral medications (e.g., Paxlovid) may be used early to prevent severe illness.", "Severe cases require hospital care, including oxygen support and steroids (e.g., Dexamethasone)."],
+    "advice": ["Stay up-to-date with recommended COVID-19 vaccinations.", "If you are at high risk for severe disease and test positive, contact your doctor immediately about treatment options.", "Isolate yourself if you have symptoms to protect others."],
+    "malawi_context": ["Malawi has experienced multiple waves of COVID-19.", "Vaccines are available, though vaccine hesitancy has been a challenge.", "The pandemic put a strain on the health system and highlighted the need for stronger public health infrastructure."]
+  },
+  {
+    "disease": "Asthma",
+    "signs": ["Wheezing (a whistling sound when breathing out)", "Shortness of breath", "Chest tightness or pain", "Coughing, especially at night or early morning", "Symptoms are often triggered and can vary over time"],
+    "causes": ["Exact cause unknown, but involves a combination of genetic and environmental factors.", "Airway inflammation and hyperreactivity to triggers.", "Common Triggers: Allergens (dust mites, pollen, mold), tobacco smoke, air pollution, cold air, exercise, respiratory infections."],
+    "prevention": ["Identify and avoid personal asthma triggers.", "Use controller medications as prescribed to reduce underlying inflammation.", "Get a flu shot annually.", "Create an Asthma Action Plan with your doctor."],
+    "treatment": ["Quick-Relief Inhalers (e.g., Salbutamol) for rapid relief during an attack.", "Long-Term Control Medications (e.g., Inhaled Corticosteroids) taken daily to prevent symptoms and attacks.", "In severe attacks, oral steroids and emergency medical care may be needed."],
+    "advice": ["Asthma is a chronic condition that can be controlled, allowing for a normal, active life.", "Learn to use your inhaler correctly for the medicine to reach your lungs.", "Don't ignore worsening symptoms. Follow your Asthma Action Plan."],
+    "malawi_context": ["Asthma is under-diagnosed and often mistaken for recurrent bronchitis or TB.", "Access to inhalers and spacers can be limited, and cost is a barrier for many.", "Burning of biomass fuels for cooking is a significant trigger in many households."]
+  },
+  {
+    "disease": "Diarrhea",
+    "signs": ["Loose, watery stools three or more times a day", "Abdominal cramps and pain", "Urgent need to have a bowel movement", "Nausea and vomiting", "Fever", "Signs of dehydration: Thirst, dry mouth, little urine, lethargy, sunken eyes"],
+    "causes": ["Viruses (e.g., Rotavirus, Norovirus) - most common cause", "Bacteria (e.g., E. coli, Salmonella, Shigella) from contaminated food/water", "Parasites (e.g., Giardia)", "Malnutrition, making children more susceptible", "Poor sanitation and hygiene"],
+    "prevention": ["Exclusive breastfeeding for the first 6 months.", "Rotavirus vaccination.", "Frequent handwashing with soap.", "Use of improved sanitation facilities and safe drinking water.", "Good food hygiene practices."],
+    "treatment": ["Oral Rehydration Solution (ORS) is the key treatment to prevent and treat dehydration.", "Zinc supplements for 10-14 days reduce severity and duration and prevent future episodes.", "Continued feeding and breastfeeding to maintain nutrition.", "Antibiotics are only for specific bacterial causes, not for most cases."],
+    "advice": ["The main danger of diarrhea is dehydration. Start giving ORS at the first sign of diarrhea.", "Do not give anti-diarrheal medicines to children; they can be harmful.", "Seek medical help if there is blood in stool, persistent vomiting, or signs of severe dehydration."],
+    "malawi_context": ["Diarrhea is a leading cause of childhood mortality, linked to poor WASH (Water, Sanitation, and Hygiene) conditions.", "Rotavirus vaccine is part of the national immunization program.", "Community Health Workers promote the use of ORS and zinc."]
+  },
+  {
+    "disease": "Diabetes",
+    "signs": ["Type 1: Frequent urination, excessive thirst, extreme hunger, unintended weight loss, fatigue.", "Type 2: Often develops slowly; can include the same symptoms as Type 1, plus blurred vision, slow-healing sores, frequent infections, and areas of darkened skin (acanthosis nigricans)."],
+    "causes": ["Type 1 Diabetes: Autoimmune destruction of insulin-producing cells in the pancreas. Cause not fully known.", "Type 2 Diabetes: Develops due to insulin resistance (body doesn't use insulin well) and eventually reduced insulin production. Strongly linked to obesity, physical inactivity, and genetics.", "Gestational Diabetes: Occurs during pregnancy."],
+    "prevention": ["Type 1: Cannot be prevented currently.", "Type 2: Maintain a healthy weight, eat a balanced diet, engage in regular physical activity, avoid tobacco use."],
+    "treatment": ["Type 1: Lifelong insulin therapy (injections or pump), blood sugar monitoring, carbohydrate counting.", "Type 2: Lifestyle changes are foundational. Oral medications (e.g., Metformin) and/or injectable medications (including insulin) are often needed over time.", "Regular foot and eye exams to screen for complications."],
+    "advice": ["Diabetes is a chronic condition that requires daily self-management.", "Uncontrolled diabetes can lead to heart disease, stroke, kidney failure, blindness, and limb amputation.", "Work with your healthcare team to create a personalized management plan."],
+    "malawi_context": ["The prevalence of Type 2 Diabetes is rising rapidly due to lifestyle changes.", "Access to insulin, test strips, and specialized care is a significant challenge, especially in rural areas.", "There is a lot of misinformation and stigma associated with the disease."]
+  },
+  {
+    "disease": "Hepatitis B",
+    "signs": ["Acute Infection: Fatigue, fever, loss of appetite, nausea, vomiting, abdominal pain, dark urine, clay-colored stools, joint pain, jaundice.", "Chronic Infection: May have no symptoms for decades until complications like cirrhosis or liver cancer develop."],
+    "causes": ["Infection with the Hepatitis B virus (HBV)", "Contact with infectious blood, semen, and other body fluids.", "Mother-to-child transmission during birth.", "Unprotected sex with an infected partner.", "Sharing needles, syringes, or other drug-injection equipment.", "Unsafe blood transfisions or medical procedures."],
+    "prevention": ["Hepatitis B vaccination is the most effective prevention (part of the childhood immunization schedule).", "Practice safe sex by using condoms.", "Do not share needles, razors, or toothbrushes.", "Ensure safe blood transfusion practices and sterile medical equipment."],
+    "treatment": ["Acute Hepatitis B: Usually managed with supportive care (rest, nutrition, fluids).", "Chronic Hepatitis B: Requires lifelong monitoring. Antiviral medications (e.g., Tenofovir, Entecavir) can suppress the virus and reduce liver damage but rarely cure it."],
+    "advice": ["Get vaccinated if you haven't been. It's a safe and effective vaccine.", "If you are chronically infected, avoid alcohol as it can accelerate liver damage.", "Get regular check-ups to monitor your liver health."],
+    "malawi_context": ["Hepatitis B is highly endemic in sub-Saharan Africa, including Malawi.", "The vaccine was introduced into the routine infant immunization schedule, which will reduce the burden in future generations.", "Screening and treatment for chronic HBV are not yet widely accessible."]
+  },
+  {
+    "disease": "Arthritis",
+    "signs": ["Joint pain, tenderness, and stiffness", "Inflammation, swelling, and redness around the joint", "Reduced range of motion", "Warmth in the affected area", "Symptoms are often worse in the morning"],
+    "causes": ["Osteoarthritis: 'Wear and tear' damage to joint cartilage over time.", "Rheumatoid Arthritis: An autoimmune disorder where the immune system attacks the joints.", "Gout: Buildup of uric acid crystals in the joint.", "Other causes: Infections, underlying diseases."],
+    "prevention": ["Maintain a healthy weight to reduce stress on joints.", "Exercise regularly to strengthen muscles around joints.", "Use proper techniques when lifting or moving heavy objects.", "Protect joints from injury."],
+    "treatment": ["Medications: Pain relievers (e.g., Paracetamol), NSAIDs (e.g., Ibuprofen), disease-modifying antirheumatic drugs (DMARDs) for rheumatoid arthritis.", "Physical therapy to improve strength and range of motion.", "Lifestyle changes: Weight loss, exercise.", "In severe cases, joint replacement surgery may be an option."],
+    "advice": ["Arthritis is not just 'old age'; it can affect people of all ages.", "Stay active. Inactivity can make joints stiffer and more painful.", "Work with a doctor to find a treatment plan that manages pain and maintains joint function."],
+    "malawi_context": ["Arthritis is often misunderstood and poorly managed due to limited access to specialists like rheumatologists.", "Pain management often relies on basic painkillers, which may not be sufficient for inflammatory types like rheumatoid arthritis.", "Traditional healers are often consulted for joint pain."]
+  },
+  {
+    "disease": "Meningitis",
+    "signs": ["Sudden high fever", "Severe headache", "Stiff neck", "Nausea or vomiting", "Confusion or difficulty concentrating", "Sensitivity to light (photophobia)", "Sleepiness or difficulty waking", "In infants: Bulging fontanelle (soft spot on head), inactivity, poor feeding, a high-pitched cry"],
+    "causes": ["Viral Meningitis: Most common, usually less severe. Caused by various viruses.", "Bacterial Meningitis: Less common but very serious and life-threatening. Caused by bacteria like Neisseria meningitidis, Streptococcus pneumoniae, Haemophilus influenzae.", "Fungal Meningitis: Rare, in immunocompromised people."],
+    "prevention": ["Vaccination: Meningococcal, Pneumococcal, and Hib vaccines protect against the main bacterial causes.", "Good hygiene (handwashing, not sharing utensils/ drinks).", "For close contacts of a bacterial meningitis case, prophylactic antibiotics may be given."],
+    "treatment": ["Bacterial Meningitis: A medical emergency requiring immediate hospitalization and intravenous antibiotics.", "Viral Meningitis: Usually resolves on its own with supportive care (rest, fluids, pain medication).", "Fungal Meningitis: Treated with long courses of antifungal drugs."],
+    "advice": ["Bacterial meningitis can kill within hours. If you suspect meningitis (especially with stiff neck and fever), seek emergency care immediately.", "Early antibiotic treatment is critical for survival and to reduce the risk of permanent disabilities like brain damage or hearing loss."],
+    "malawi_context": ["Malawi lies in the 'Meningitis Belt' of Africa and is at risk for epidemics, particularly of Meningococcal Meningitis.", "Vaccination campaigns are conducted in response to outbreaks.", "Diagnosis can be challenging as it requires a lumbar puncture (spinal tap), which is not available at all health centers."]
+  },
+  {
+    "disease": "Urinary Tract Infection (UTI)",
+    "signs": ["A strong, persistent urge to urinate", "A burning sensation when urinating", "Passing frequent, small amounts of urine", "Cloudy, dark, bloody, or strong-smelling urine", "Pelvic pain in women", "Rectal pain in men"],
+    "causes": ["Bacteria (most commonly E. coli from the digestive tract) entering the urethra and multiplying in the urinary tract.", "Risk factors: Female anatomy (shorter urethra), sexual activity, certain types of birth control, menopause, urinary tract abnormalities, blockages (e.g., kidney stones)."],
+    "prevention": ["Drink plenty of water to flush out bacteria.", "Wipe from front to back after using the toilet.", "Urinate soon after sexual intercourse.", "Avoid potentially irritating feminine products (douches, powders)."],
+    "treatment": ["Antibiotics are the standard treatment. The type and duration depend on the bacteria and the patient's health.", "Pain relievers can help relieve the burning sensation.", "Uncomplicated UTIs are usually cured with a short course of antibiotics."],
+    "advice": ["Drink cranberry juice or take supplements; it may help prevent recurrent UTIs in some people, though evidence is mixed.", "Do not delay urination when you feel the urge.", "Finish the entire course of antibiotics, even if you start to feel better."],
+    "malawi_context": ["UTIs are common but often self-treated or misdiagnosed.", "Access to laboratory testing for urine culture is limited, so diagnosis is often based on symptoms alone.", "Antibiotic resistance is a growing concern due to inappropriate use."]
+  },
+  {
+    "disease": "Measles",
+    "signs": ["High fever (can spike to 104°F/40°C)", "Cough, runny nose, red and watery eyes (conjunctivitis)", "Koplik's spots (tiny white spots with bluish-white centers on a red background) inside the mouth.", "A red, blotchy rash that starts on the face and hairline, then spreads downward to the rest of the body."],
+    "causes": ["Infection with the highly contagious measles virus (rubeola).", "Spread through the air by coughing and sneezing, or by direct contact with infected nasal or throat secretions."],
+    "prevention": ["Vaccination with the Measles, Mumps, and Rubella (MMR) vaccine is highly effective. Two doses are recommended.", "Isolation of infected individuals to prevent spread."],
+    "treatment": ["No specific antiviral treatment.", "Supportive care to relieve symptoms: rest, fluids, fever reducers (avoid aspirin in children).", "Vitamin A supplementation is recommended for children with measles in developing countries to reduce the risk of complications and death.", "Treatment of complications like pneumonia or ear infections."],
+    "advice": ["Measles is one of the most contagious diseases. Vaccination is crucial for herd immunity.", "Complications can be severe and include pneumonia, encephalitis (brain swelling), blindness, and death, especially in malnourished children.", "If you suspect measles, contact a health facility but inform them beforehand so they can take precautions to prevent spread."],
+    "malawi_context": ["Malawi conducts periodic mass measles vaccination campaigns to reach all children, alongside routine immunization.", "Outbreaks can occur when vaccination coverage drops.", "Malnutrition increases the risk of severe and fatal measles."]
+  },
+  {
+    "disease": "Fungal Infection",
+    "signs": ["Varies greatly by type and location:", "Skin (Ringworm, Athlete's Foot): Itchy, red, scaly, circular rash.", "Nails (Onychomycosis): Thickened, discolored, brittle nails.", "Vaginal Yeast Infection: Itching, burning, thick white discharge.", "Thrush (Oral Candidiasis): White patches on tongue/in mouth.", "Systemic: Fever, cough, weight loss (e.g., in cryptococcal meningitis, common in advanced HIV)."],
+    "causes": ["Contact with fungi (dermatophytes, yeasts, molds).", "Thrives in warm, moist environments (skin folds, sweaty feet).", "Weakened immune system (e.g., HIV) is a major risk factor for severe and systemic fungal infections.", "Antibiotic use can disrupt normal flora and allow yeast overgrowth."],
+    "prevention": ["Keep skin clean and dry.", "Wear breathable clothing and footwear.", "Don't walk barefoot in public showers/pools.", "Practice good hygiene and don't share personal items like towels or combs.", "For people with HIV, taking co-trimoxazole prophylaxis helps prevent some fungal infections."],
+    "treatment": ["Topical antifungals: Creams, powders, or sprays for skin infections.", "Oral antifungals: Tablets for severe or persistent skin infections, nail infections, and systemic infections (e.g., Fluconazole, Itraconazole)."],
+    "advice": ["Do not use steroid creams (which reduce inflammation) on a fungal rash unless prescribed, as they can make the infection worse.", "Complete the full course of antifungal treatment, even if the rash seems to be gone.", "See a doctor for infections that don't improve with over-the-counter treatments."],
+    "malawi_context": ["Superficial fungal infections are very common due to the warm climate.", "Cryptococcal meningitis is a major opportunistic infection and cause of death in people with advanced HIV/AIDS.", "Access to diagnostics for systemic fungal infections and to some oral antifungal drugs can be limited."]
+  },
+  {
+    "disease": "Common Cold / Flu (Influenza)",
+    "signs": ["Common Cold: Runny/stuffy nose, sore throat, sneezing, cough, mild fever, slight body aches.", "Influenza (Flu): Sudden onset of HIGH fever, dry cough, sore throat, severe muscle/body aches, headache, extreme tiredness. Can lead to pneumonia."],
+    "causes": ["Common Cold: Caused by many different viruses (e.g., Rhinoviruses).", "Influenza: Caused by Influenza viruses (Types A, B, and C)."],
+    "prevention": ["Annual flu vaccination is the best way to prevent influenza.", "Frequent handwashing with soap and water.", "Avoid touching your eyes, nose, and mouth.", "Avoid close contact with sick people.", "Cover your mouth and nose when coughing or sneezing."],
+    "treatment": ["Rest and drink plenty of fluids.", "Use over-the-counter medicines to relieve symptoms (e.g., paracetamol for fever/pain).", "Antiviral drugs for influenza (e.g., Oseltamivir) can reduce severity and duration if started early, but are not effective for the common cold."],
+    "advice": ["Antibiotics do not work against cold and flu viruses.", "The flu can be very serious for young children, the elderly, pregnant women, and people with chronic illnesses. They should be vaccinated.", "Stay home when you are sick to avoid spreading the illness."],
+    "malawi_context": ["Influenza circulates year-round in tropical climates like Malawi's, with peaks during the rainy season.", "The common cold is often referred to locally as 'flu', leading to confusion with actual influenza.", "Flu vaccines are available but not widely used in the general population, typically targeted at high-risk groups."]
+  },
+  {
+    "disease": "Malnutrition",
+    "signs": ["Undernutrition (Wasting, Stunting, Underweight): Low weight-for-height (wasting), low height-for-age (stunting), low weight-for-age (underweight). Fatigue, dizziness, swollen belly, poor growth in children.", "Overnutrition (Overweight/Obesity): Excess body fat, high body mass index (BMI).", "Micronutrient Deficiencies: Various signs (e.g., night blindness-Vitamin A, anemia-Iron, goiter-Iodine)."],
+    "causes": ["Undernutrition: Not eating enough food, lack of nutritious food, recurrent infections (diarrhea, worms) that prevent nutrient absorption, poor childcare practices.", "Overnutrition: Consuming more calories than the body uses, often from diets high in fat and sugar and low physical activity."],
+    "prevention": ["Exclusive breastfeeding for first 6 months, continued breastfeeding with appropriate complementary foods up to 2 years.", "Diverse diet including fruits, vegetables, and protein sources.", "Treatment and prevention of infectious diseases.", "Food fortification (e.g., iodized salt).", "Public health education on nutrition."],
+    "treatment": ["Severe Acute Malnutrition (SAM): Therapeutic ready-to-use therapeutic food (RUTF), treatment of medical complications.", "Moderate Acute Malnutrition (MAM): Supplementary feeding, nutritional counseling.", "Overnutrition: Dietary changes, increased physical activity, behavior modification."],
+    "advice": ["Malnutrition is not just about hunger; it's about the quality of the diet.", "The first 1000 days of life (from pregnancy to a child's second birthday) are the most critical for preventing lifelong effects of malnutrition.", "A malnourished child is much more vulnerable to infections, and infections can make malnutrition worse—a vicious cycle."],
+    "malawi_context": ["Malnutrition, particularly stunting in children under 5, remains a severe public health problem.", "It is a complex issue driven by poverty, food insecurity, and suboptimal infant and young child feeding practices.", "Programs by the government and NGOs focus on promoting agriculture, nutrition education, and managing acute malnutrition at the community level."]
+  }
+]
