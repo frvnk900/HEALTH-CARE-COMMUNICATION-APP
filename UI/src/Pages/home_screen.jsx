@@ -378,7 +378,7 @@ function Home() {
                 <Messages conversation={conversation} />
               ) : (
                 <div className="empty-chat">
-                  <p className="empty-text">Start a conversation with MoyoAI</p>
+                  <p className="empty-text">Start a conversation with HealthcareAi</p>
                   {!isConnected && (
                     <p className="connection-warning">
                       🔴 Connecting to server...
@@ -412,7 +412,7 @@ function Home() {
                         ? "Connecting to server..." 
                         : selectedFile 
                         ? "Add a message about the file (optional)..." 
-                        : "Ask MoyoAI about patient symptoms, diagnosis, or treatment..."
+                        : "Ask HealthcareAi about patient symptoms, diagnosis, or treatment..."
                     }
                     type="text"
                     value={message}

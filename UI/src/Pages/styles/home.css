@@ -1,4 +1,4 @@
-/* --- CSS VARIABLES & FONTS --- */
+ 
 :root {
   --color-primary: #13ec6d;
   --color-background-light: #f6f8f7;
@@ -24,16 +24,9 @@
   font-variation-settings: 'FILL' 0, 'wght' 400, 'GRAD' 0, 'opsz' 24;
 }
 
-/* --- RESET --- */
-html, body {
-  margin: 0;
-  padding: 0;
-  height: 100%;
-  width: 100%;
-  overflow: hidden;
-}
+ 
 
-/* --- LAYOUT AND CONTAINER STYLES --- */
+ 
 .home-root {
   position: fixed;
   top: 0;
@@ -52,8 +45,8 @@ html, body {
   background-color: var(--color-background-dark);
 }
 
-/* Remove or fix these if you're using them */
-/* .background-image-layer {
+ 
+.background-image-layer {
   position: fixed;
   top: 0;
   left: 0;
@@ -74,7 +67,7 @@ html, body {
   z-index: 1;
   background-color: rgba(16, 34, 24, 0.8);
   backdrop-filter: blur(16px);
-} */
+} 
 
 .home-container {
   position: relative;

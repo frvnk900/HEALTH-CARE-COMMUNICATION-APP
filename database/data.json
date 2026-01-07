@@ -12,7 +12,7 @@
             {
                 "schedule_title": "Morning mediction",
                 "description": "at the queen elizebath",
-                "active": false,
+                "active": true,
                 "ends_on": "tue/12/2025",
                 "calendar_data": [
                     {
@@ -56,7 +56,7 @@
             {
                 "schedule_title": "Gpdksmv kmdv",
                 "description": "cdckdsv,kdv,kdv",
-                "active": false,
+                "active": true,
                 "ends_on": "tue/12/2025",
                 "calendar_data": [
                     {
@@ -489,5 +489,17 @@
             }
         ],
         "profile_image": "snz686LUT2qP.png"
+    },
+    {
+        "username": "Martin owens",
+        "user_id": "I6rFWxa8DpI5",
+        "gender": "male",
+        "email": "owens@gmail.com",
+        "password": "1234567890",
+        "phone": "+265996666274",
+        "age": "23",
+        "location": "Dowa",
+        "schedule": [],
+        "profile_image": "wgGEpnjympFK.jpg"
     }
 ]

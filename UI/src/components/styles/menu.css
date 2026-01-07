@@ -1,14 +1,17 @@
-/* --- SIDEBAR STYLES (LEFT SIDE) --- */
+ 
+@import url('https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@300..700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&display=swap');
+
 .sidebar {
   display: none;
-  width: 16rem; /* Fixed width */
-  flex-shrink: 0; /* Prevent sidebar from shrinking */
-  height: 100vh; /* Full viewport height */
-  position: fixed; /* Fixed positioning */
+  width: 16rem; 
+  flex-shrink: 0;  
+  height: 100vh;  
+  position: fixed;  
   left: 0;
   top: 0;
-  z-index: 50; /* Ensure it stays above other content */
-  /* overflow-y: auto; Allow scrolling if content overflows */
+  z-index: 50;  
+ 
 }
 
 @media (min-width: 1024px) {
@@ -22,11 +25,11 @@
   height: 100%;
   flex-direction: column;
   justify-content: space-between;
-  background-color: rgba(16, 34, 24, 0.95); /* More opaque for better readability */
+  background-color: rgba(16, 34, 24, 0.95);  
   padding: 1rem;
   border-right: 1px solid var(--color-border);
   width: 100%;
-  box-sizing: border-box; /* Include padding in width calculation */
+  box-sizing: border-box;  
 }
 
 .sidebar-top {
@@ -34,7 +37,7 @@
   flex-direction: column;
   gap: 1.5rem;
   flex: 1;
-  overflow-y: auto; /* Allow scrolling for nav items if needed */
+  overflow-y: auto;  
 }
 
 .profile-section {
@@ -44,7 +47,7 @@
   gap: 1rem;
   padding-bottom: 1.5rem;
   border-bottom: 1px solid var(--color-border);
-  flex-shrink: 0; /* Prevent profile section from shrinking */
+  flex-shrink: 0; 
 }
 
 .profile-image {
@@ -54,7 +57,7 @@
   background-size: cover;
   background-position: center;
   border: 2px solid rgba(19, 236, 109, 0.5);
-  flex-shrink: 0; /* Prevent image from shrinking */
+  flex-shrink: 0; 
 }
 
 .profile-info {
@@ -224,27 +227,34 @@
   background-repeat: no-repeat !important;
 }
 
-/* Scrollbar styling for sidebar */
+ 
 .sidebar::-webkit-scrollbar {
-  width: 4px;
+  width: 0px;
+  display: none;
 }
 
 .sidebar::-webkit-scrollbar-track {
   background: transparent;
+    width: 0px;
+  display: none;
+    display: none;
 }
+ 
 
 .sidebar::-webkit-scrollbar-thumb {
-  background: rgba(255, 255, 255, 0.2);
-  border-radius: 2px;
+  display: none;
+    width: 0px;
+  display: none;
 }
 
-.sidebar::-webkit-scrollbar-thumb:hover {
-  background: rgba(255, 255, 255, 0.3);
-}
+/* .sidebar::-webkit-scrollbar-thumb:hover {
+  display: none;
+  width: 0px;
+} */
 
-/* Ensure main content doesn't get hidden behind sidebar */
+ 
 .main-content {
-  margin-left: 16rem; /* Offset main content by sidebar width */
+  margin-left: 16rem;  
   width: calc(100% - 16rem);
 }
 
@@ -255,7 +265,7 @@
   }
 }
 
-/* Mobile responsiveness */
+ 
 @media (max-width: 768px) {
   .sidebar {
     width: 100%;
@@ -269,7 +279,7 @@
   }
 }
 
-/* Ensure body has proper spacing when sidebar is present */
+ 
 body {
   margin: 0;
   padding: 0;

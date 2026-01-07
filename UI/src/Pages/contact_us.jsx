@@ -2,20 +2,20 @@ import React from "react";
 import "./styles/contact.css";
 
 function Team() {
-  // Dictionary of team members
+ 
   const teamMembers = [
     {
       id: 1,
       name: "Frank ",
-      role: "Lead AI Developer & Webmaster",
+      role: "Lead AI Developer & Webmaster | Project Manager",
       icon: "psychology",
       description:
-        "Specializes in healthcare AI and machine learning algorithms and web management.",
+        "Specializes in healthcare AI and machine learning algorithms and web management and Project manager.",
     },
     {
       id: 2,
       name: "Amani",
-      role: "Project Manager",
+      role: "",
       icon: "code",
       description: "Insured every aspect of project delivery",
     },
@@ -87,7 +87,7 @@ function Team() {
           <div className="team-header">
             <h1 className="team-title">Our Team</h1>
             <p className="team-subtitle">
-              Meet the talented individuals behind MoyoAI who are passionate
+              Meet the talented individuals behind HealthCareAI who are passionate
               about revolutionizing healthcare through technology and
               innovation.
             </p>

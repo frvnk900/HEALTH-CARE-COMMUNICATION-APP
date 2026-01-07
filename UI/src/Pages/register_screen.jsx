@@ -101,21 +101,23 @@ function Signup() {
       // Auto-login after successful registration
       if (response.data.token) {
         const userData = {
-          user_id: response.data.user_id || extractUserIdFromToken(response.data.token),
+          user_id:
+            response.data.user_id ||
+            extractUserIdFromToken(response.data.token),
           email: formData.email,
-          username: formData.username
+          username: formData.username,
         };
-        
+
         login(response.data.token, userData);
-        
+
         // Redirect to home after a brief delay to show success message
         setTimeout(() => {
-          navigate('/home');
+          navigate("/home");
         }, 1500);
       } else {
         // If no token is returned, redirect to login
         setTimeout(() => {
-          navigate('/login');
+          navigate("/login");
         }, 1500);
       }
 
@@ -132,7 +134,6 @@ function Signup() {
       });
       setProfileImage(null);
       setProfilePreview(null);
-
     } catch (error) {
       const errorMsg =
         error.response?.data?.error ||
@@ -147,16 +148,16 @@ function Signup() {
 
   const extractUserIdFromToken = (token) => {
     try {
-      const payload = JSON.parse(atob(token.split('.')[1]));
+      const payload = JSON.parse(atob(token.split(".")[1]));
       return payload.user_id;
     } catch (error) {
-      console.error('Error decoding token:', error);
+      console.error("Error decoding token:", error);
       return null;
     }
   };
 
   const handleLoginRedirect = () => {
-    navigate('/login');
+    navigate("/login");
   };
 
   return (
@@ -187,7 +188,10 @@ function Signup() {
           <div className="card-header">
             {/* Profile Image Upload at Top */}
             <div className="profile-upload-section">
-              <div className="profile-image-container" onClick={handleImageClick}>
+              <div
+                className="profile-image-container"
+                onClick={handleImageClick}
+              >
                 {profilePreview ? (
                   <img
                     src={profilePreview}
@@ -196,11 +200,15 @@ function Signup() {
                   />
                 ) : (
                   <div className="profile-image-placeholder">
-                    <span className="material-symbols-outlined">add_a_photo</span>
+                    <span className="material-symbols-outlined">
+                      add_a_photo
+                    </span>
                   </div>
                 )}
                 <div className="profile-image-overlay">
-                  <span className="material-symbols-outlined">photo_camera</span>
+                  <span className="material-symbols-outlined">
+                    photo_camera
+                  </span>
                 </div>
               </div>
               <input
@@ -209,11 +217,12 @@ function Signup() {
                 name="profile_image"
                 accept="image/*"
                 onChange={handleInputChange}
-                required
                 disabled={isLoading}
                 style={{ display: "none" }}
               />
-              <p className="profile-upload-text">Click to upload profile photo</p>
+              <p className="profile-upload-text">
+                Click to upload profile photo
+              </p>
             </div>
 
             <div className="icon-container">
@@ -436,7 +445,16 @@ function Signup() {
 
           <p className="login-link-text">
             Already have an account?{" "}
-            <button className="login-link" onClick={handleLoginRedirect}>
+            <button
+              className="login-link"
+              style={{
+                background: "none",
+                border: "none",
+                outline: "none",
+                fontSize: "16px",
+              }}
+              onClick={handleLoginRedirect}
+            >
               Sign In
             </button>
           </p>

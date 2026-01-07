@@ -6,13 +6,8 @@ function GetStarted() {
     window.location.href = "/login";
   };
 
-  const handleLearnMore = () => {
-    window.location.href = "/about";
-  };
-
   return (
-    <div className="getstarted-root">
-      {/* Background Image Layer */}
+    <div className="getstarted-root font-display dark">
       <div
         className="background-image-layer"
         data-alt="A softly blurred background image of a doctor using a tablet, representing modern healthcare in Africa."
@@ -22,37 +17,74 @@ function GetStarted() {
         }}
       ></div>
 
-      {/* Content Container */}
-      <div className="content-container">
-        {/* Logo */}
-        <div className="logo-container">
-          <div className="logo-icon">
-            <span className="material-symbols-outlined">medical_services</span>
-          </div>
-          <div className="logo-text">
-            <span className="highlight">Moyo</span>Ai
-          </div>
-        </div>
+      <div className="dark-overlay-layer"></div>
 
-        <h1 className="main-heading">
-          Transforming Healthcare
-          <span className="heading-gradient"> Across Africa</span>
-        </h1>
-        <p className="subheading">
-          Connecting patients, doctors, and clinics with secure, accessible, and
-          innovative digital health solutions.
-        </p>
+      <div className="getstarted-container">
+        <div className="getstarted-card">
+          <div className="header-section">
+            <div className="logo-container">
+              <h1 className="logo-text">HealthCareAI</h1>
+            </div>
+            <h2 className="main-title">Revolutionizing Healthcare in Africa</h2>
+            <p className="main-subtitle">
+              AI-powered medical assistance designed for African healthcare
+              needs. Get instant symptom analysis, treatment guidance, and
+              connect with healthcare professionals.
+            </p>
+          </div>
 
-        <div className="cta-section">
-          <button className="btn-primary" onClick={handleGetStarted}>
-            Get Started Free
-            <span className="material-symbols-outlined btn-icon">
-              arrow_forward
-            </span>
-          </button>
-          <button className="btn-secondary" onClick={handleLearnMore}>
-            Learn More
-          </button>
+          <div className="cta-section">
+            <h3 className="cta-title">
+              Ready to Transform Your Healthcare Experience?
+            </h3>
+            <p className="cta-subtitle">
+              Join thousands of users who trust MoyoAI for their healthcare needs
+            </p>
+            
+            <div className="actions-buttons">
+              <div className="ac-btn">
+                <button className="get-started-btn" onClick={handleGetStarted}>
+                  <span className="button-text">Get Started Now</span>
+                </button>
+              </div>
+            </div>
+
+            <div className="benefits-list">
+              <div className="benefit-item">
+                <span className="material-symbols-outlined benefit-icon">
+                  check_circle
+                </span>
+                <span>No credit card required</span>
+              </div>
+              <div className="benefit-item">
+                <span className="material-symbols-outlined benefit-icon">
+                  check_circle
+                </span>
+                <span>Free forever for basic features</span>
+              </div>
+              <div className="benefit-item">
+                <span className="material-symbols-outlined benefit-icon">
+                  check_circle
+                </span>
+                <span>Setup in under 2 minutes</span>
+              </div>
+            </div>
+          </div>
+
+          <footer className="getstarted-footer">
+            <p className="footer-text">
+              © 2025 HealthCareAI. All rights reserved. |
+              <a className="footer-link" href="#">
+                {" "}
+                Privacy Policy
+              </a>{" "}
+              |
+              <a className="footer-link" href="#">
+                {" "}
+                Terms of Service
+              </a>
+            </p>
+          </footer>
         </div>
       </div>
     </div>

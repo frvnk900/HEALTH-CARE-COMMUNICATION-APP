@@ -294,19 +294,14 @@ function Login() {
           </p>
 
       
-          <p className="support-text">
-            Need help?{" "}
-            <a className="support-link" href="#">
-              Contact Support
-            </a>
-          </p>
+           
         </form>
       </div>
 
      
       <footer className="login-footer">
         <p className="footer-text">
-          © 2025 TakenoLab AI Team. All rights reserved. |{" "}
+          © 2025 HealthCareAI Team. All rights reserved. |{" "}
         </p>
       </footer>
     </div>

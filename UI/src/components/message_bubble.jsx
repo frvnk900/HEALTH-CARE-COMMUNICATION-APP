@@ -89,14 +89,23 @@ function Messages({ conversation }) {
     );
   };
 
-  const processHtmlLinks = (content, messageIndex) => {
+  const processHtmlContent = (content, messageIndex) => {
+    // Regex patterns for HTML tags
+    const imgRegex = /<img\s+(?:[^>]*?\s+)?src=(["'])(.*?)\1[^>]*>/gi;
+    const pRegex = /<p[^>]*>(.*?)<\/p>/gi;
     const linkRegex = /<a\s+(?:[^>]*?\s+)?href=(["'])(.*?)\1[^>]*>(.*?)<\/a>/gi;
+    
     const parts = [];
     let lastIndex = 0;
-    let match;
     
-    while ((match = linkRegex.exec(content)) !== null) {
-      // Add text before the link
+    // Combine all regex patterns
+    const combinedRegex = new RegExp(`(${imgRegex.source}|${pRegex.source}|${linkRegex.source})`, 'gi');
+    
+    let match;
+    const regex = /<img[^>]*>|<p[^>]*>.*?<\/p>|<a[^>]*>.*?<\/a>/gi;
+    
+    while ((match = regex.exec(content)) !== null) {
+      // Add text before the HTML tag
       if (match.index > lastIndex) {
         const textBefore = content.slice(lastIndex, match.index);
         parts.push(
@@ -111,29 +120,73 @@ function Messages({ conversation }) {
         );
       }
 
-      // Add the link
-      const [, , href, linkText] = match;
-      parts.push(
-        <a 
-          key={`link-${match.index}`}
-          href={href}
-          target="_blank"
-          rel="noopener noreferrer"
-          className="message-link"
-          onClick={(e) => {
-            if (href.includes('/files/download/')) {
-              console.log('Downloading file:', href);
-            }
-          }}
-        >
-          {linkText || 'Download File'}
-        </a>
-      );
+      // Process the matched HTML tag
+      const tagContent = match[0];
+      
+      // Check if it's an image tag
+      if (tagContent.startsWith('<img')) {
+        const srcMatch = tagContent.match(/src=(["'])(.*?)\1/);
+        const altMatch = tagContent.match(/alt=(["'])(.*?)\1/);
+        
+        if (srcMatch) {
+          parts.push(
+            <div key={`img-${match.index}`} className="message-image-container">
+              <img 
+                src={srcMatch[2]} 
+                alt={altMatch ? altMatch[2] : 'Generated image'} 
+                className="message-image"
+                loading="lazy"
+              />
+            </div>
+          );
+        }
+      }
+      // Check if it's a paragraph tag
+      else if (tagContent.startsWith('<p')) {
+        const contentMatch = tagContent.match(/<p[^>]*>(.*?)<\/p>/);
+        if (contentMatch) {
+          const styleMatch = tagContent.match(/style=(["'])(.*?)\1/);
+          const style = styleMatch ? styleMatch[2] : '';
+          
+          parts.push(
+            <p 
+              key={`p-${match.index}`}
+              className={`message-paragraph ${style.includes('color: red') ? 'error-paragraph' : ''}`}
+              style={{ margin: '8px 0' }}
+              dangerouslySetInnerHTML={{ __html: contentMatch[1] }}
+            />
+          );
+        }
+      }
+      // Check if it's a link tag
+      else if (tagContent.startsWith('<a')) {
+        const hrefMatch = tagContent.match(/href=(["'])(.*?)\1/);
+        const linkTextMatch = tagContent.match(/>([^<]+)</);
+        
+        if (hrefMatch) {
+          parts.push(
+            <a 
+              key={`link-${match.index}`}
+              href={hrefMatch[2]}
+              target="_blank"
+              rel="noopener noreferrer"
+              className="message-link"
+              onClick={(e) => {
+                if (hrefMatch[2].includes('/files/download/')) {
+                  console.log('Downloading file:', hrefMatch[2]);
+                }
+              }}
+            >
+              {linkTextMatch ? linkTextMatch[1] : 'Link'}
+            </a>
+          );
+        }
+      }
 
       lastIndex = match.index + match[0].length;
     }
 
-    // Add remaining text after last link
+    // Add remaining text after last HTML tag
     if (lastIndex < content.length) {
       const textAfter = content.slice(lastIndex);
       parts.push(
@@ -149,7 +202,7 @@ function Messages({ conversation }) {
     }
 
     return (
-      <div className="message-content-text">
+      <div className="message-content-html">
         {parts}
         <CopyButton content={content} messageIndex={messageIndex} />
       </div>
@@ -157,11 +210,18 @@ function Messages({ conversation }) {
   };
 
   const processMixedContent = (content, messageIndex) => {
-    // Convert HTML links to markdown links
-    const convertedContent = content.replace(
-      /<a\s+(?:[^>]*?\s+)?href=(["'])(.*?)\1[^>]*>(.*?)<\/a>/gi,
-      '[$3]($2)'
-    );
+    // Convert HTML tags to plain text for markdown rendering
+    const convertedContent = content
+      // Convert img tags to markdown image syntax
+      .replace(/<img\s+(?:[^>]*?\s+)?src=(["'])(.*?)\1[^>]*>/gi, (match) => {
+        const srcMatch = match.match(/src=(["'])(.*?)\1/);
+        const altMatch = match.match(/alt=(["'])(.*?)\1/);
+        return srcMatch ? `![${altMatch ? altMatch[2] : 'image'}](${srcMatch[2]})` : '';
+      })
+      // Convert paragraph tags (preserve content, strip tags)
+      .replace(/<p[^>]*>(.*?)<\/p>/gi, '$1\n\n')
+      // Convert link tags to markdown links
+      .replace(/<a\s+(?:[^>]*?\s+)?href=(["'])(.*?)\1[^>]*>(.*?)<\/a>/gi, '[$3]($2)');
     
     return renderMarkdown(convertedContent, messageIndex);
   };
@@ -169,30 +229,32 @@ function Messages({ conversation }) {
   const formatMessageContent = (content, messageIndex) => {
     if (!content) return null;
 
-    // Check if content contains HTML links
-    const linkRegex = /<a\s+(?:[^>]*?\s+)?href=(["'])(.*?)\1[^>]*>(.*?)<\/a>/gi;
-    const hasHtmlLinks = linkRegex.test(content);
-    
-    // Check if content contains markdown formatting (excluding HTML)
+    // Check for HTML content (img, p, a tags)
+    const hasHtmlImg = /<img[^>]*>/i.test(content);
+    const hasHtmlParagraph = /<p[^>]*>/i.test(content);
+    const hasHtmlLink = /<a[^>]*>/i.test(content);
+    const hasHtml = hasHtmlImg || hasHtmlParagraph || hasHtmlLink;
+
+    // Check for markdown
     const htmlStripped = content.replace(/<[^>]*>/g, '');
     const hasMarkdown = /(\*\*|\*|_|`|#|\n\s*[-*+]\s|\n\s*\d+\.\s)/.test(htmlStripped);
 
-    // Case 1: Has HTML links AND markdown
-    if (hasHtmlLinks && hasMarkdown) {
-      return processMixedContent(content, messageIndex);
+    // If there's HTML content
+    if (hasHtml) {
+      // If there's also markdown, use mixed content processing
+      if (hasMarkdown) {
+        return processMixedContent(content, messageIndex);
+      }
+      // If only HTML, process as HTML
+      return processHtmlContent(content, messageIndex);
     }
     
-    // Case 2: Has only HTML links (no markdown)
-    if (hasHtmlLinks && !hasMarkdown) {
-      return processHtmlLinks(content, messageIndex);
-    }
-    
-    // Case 3: Has only markdown (no HTML links)
-    if (hasMarkdown && !hasHtmlLinks) {
+    // If only markdown, render as markdown
+    if (hasMarkdown) {
       return renderMarkdown(content, messageIndex);
     }
     
-    // Case 4: Plain text (no HTML links, no markdown)
+    // If plain text, render as plain text
     return (
       <div className="message-content-text">
         {content.split('\n').map((line, index) => (
@@ -240,9 +302,7 @@ function Messages({ conversation }) {
     return (
       <>
         {formatMessageContent(message.content, index)}
-        <div className="message-time">
-          {formatTime(message.time)}
-        </div>
+        <div className="message-time">{formatTime(message.time)}</div>
       </>
     );
   };

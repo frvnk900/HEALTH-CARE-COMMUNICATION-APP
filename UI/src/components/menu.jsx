@@ -1,11 +1,11 @@
- import React from "react";
+import React from "react";
 import "./styles/menu.css";
-
+import { Link } from "react-router-dom";
 function Sidebar() {
   const [userProfile, setUserProfile] = React.useState(null);
   const [isLoading, setIsLoading] = React.useState(true);
   const [error, setError] = React.useState(null);
- 
+
   const getUserIdFromToken = () => {
     const token = localStorage.getItem("authToken");
     if (!token) {
@@ -22,7 +22,6 @@ function Sidebar() {
     }
   };
 
- 
   const fetchUserProfile = async () => {
     const user_id = getUserIdFromToken();
     if (!user_id) {
@@ -61,22 +60,18 @@ function Sidebar() {
     }
   };
 
- 
   const getProfileImageUrl = () => {
     if (!userProfile || !userProfile.profile_image) {
       return "https://lh3.googleusercontent.com/aida-public/AB6AXuCitvdvFaIgP7HWKefz-y3Hf-68h-Q14GCW5LHQnAekfC1Ys5Q7cW3eW5qa2hXMAgcL1PN3Ux1TjCc9fi-Kenf4cI3ZlJjletoipgQNnfS72tkWqceZe63pqJuIiRHldcaqCRUt0IK6YHlafC0BuvtgrYsSWeWIlOaMFFtrLmIa5u1Bomij0GLFRUuTANFk7ilXEvu7eapr4iGJyb7yCU0vYAlDi6ChmpQ8kW_4nJ5DAXnfQdCE63ly5wCdCYR57dik1aaWZTf0qVM";
     }
 
- 
     if (userProfile.profile_image.startsWith("http")) {
       return userProfile.profile_image;
     } else {
-      
       return `http://127.0.0.1:8001/uploads/${userProfile.profile_image}`;
     }
   };
 
- 
   const getUserDisplayName = () => {
     if (!userProfile) return "User";
 
@@ -89,41 +84,33 @@ function Sidebar() {
     }
   };
 
- 
   const getUserEmail = () => {
     if (!userProfile) return "user@example.com";
     return userProfile.email || "user@example.com";
   };
 
- 
   const handleLogout = () => {
     try {
-       
       localStorage.clear();
-      
-    
+
       sessionStorage.clear();
-      
+
       console.log("All localStorage items cleared successfully");
-      
-      
+
       window.location.href = "/login";
-      
     } catch (error) {
       console.error("Error during logout:", error);
-  
+
       localStorage.removeItem("authToken");
       localStorage.removeItem("user_id");
       localStorage.removeItem("username");
       localStorage.removeItem("email");
       localStorage.removeItem("userProfile");
-      
-      
+
       window.location.href = "/login";
     }
   };
 
-   
   const handleLogoutWithConfirmation = () => {
     const confirmLogout = window.confirm("Are you sure you want to log out?");
     if (confirmLogout) {
@@ -185,52 +172,52 @@ function Sidebar() {
           </div>
 
           <nav className="sidebar-nav">
-            <a className="nav-item" href="/home">
+            <Link className="nav-item" to="/home">
               <span className="material-symbols-outlined nav-icon">home</span>
               <p className="nav-text">Home</p>
-            </a>
-            <a className="nav-item" href="/profile">
+            </Link>
+            <Link className="nav-item" to="/profile">
               <span className="material-symbols-outlined nav-icon">
                 account_circle
               </span>
               <p className="nav-text">Profile</p>
-            </a>
-            <a className="nav-item" href="/dashboard">
+            </Link>
+            <Link className="nav-item" to="/dashboard">
               <span className="material-symbols-outlined nav-icon">
                 dashboard
               </span>
               <p className="nav-text">Dashboard</p>
-            </a>
-            <a className="nav-item" href="/map">
+            </Link>
+            <Link className="nav-item" to="/map">
               <span className="material-symbols-outlined nav-icon">map</span>
               <p className="nav-text">Map</p>
-            </a>
-            <a className="nav-item" href="/schedule">
+            </Link>
+            <Link className="nav-item" to="/schedule">
               <span className="material-symbols-outlined nav-icon">
                 calendar_month
               </span>
               <p className="nav-text">Schedule</p>
-            </a>
-            <a className="nav-item" href="/settings">
+            </Link>
+            <Link className="nav-item" to="/settings">
               <span className="material-symbols-outlined nav-icon">
                 settings
               </span>
               <p className="nav-text">Settings</p>
-            </a>
-            <a className="nav-item" href="/team-contact">
+            </Link>
+            <Link className="nav-item" to="/team-contact">
               <span className="material-symbols-outlined nav-icon">group</span>
               <p className="nav-text">Team/Contact Us</p>
-            </a>
-            <a className="nav-item" href="/help">
+            </Link>
+            <Link className="nav-item" to="/help">
               <span className="material-symbols-outlined nav-icon">help</span>
               <p className="nav-text">Help</p>
-            </a>
+            </Link>
           </nav>
         </div>
 
         <div className="sidebar-bottom">
-          <button 
-            className="nav-item logout-item" 
+          <button
+            className="nav-item logout-item"
             onClick={handleLogoutWithConfirmation}
             title="Log out of your account"
           >

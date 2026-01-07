@@ -6,9 +6,7 @@ from werkzeug.utils import secure_filename
 from flask_cors import CORS
 import jwt
 from threading import Lock
-import threading
-import time
-import pathlib,sys 
+import asyncio,time,pathlib,sys 
 sys.path.append(str(pathlib.Path(__file__).resolve().parents[1]))
 from methods import *
 from configuration.config import Config
@@ -97,6 +95,7 @@ def login_user():
     }), 200
 
  
+
 @app.route("/chat/v1/messages", methods=["POST"])
 def chat_messages():
     user_id = request.form.get("user_id")
@@ -110,38 +109,37 @@ def chat_messages():
         saved_file_path = os.path.join(app.config["UPLOAD_FOLDER"], filename)
         user_uploaded_doc.save(saved_file_path)
 
-    
-    socketio.emit("stream_start", {"message": "Processing your request..."}, room=user_id)
+    socketio.emit(
+        "stream_start",
+        {"message": "Processing your request..."},
+        room=user_id
+    )
 
-    status, response = get_ai_response(
-        user_id=user_id,
-        user_input=user_input,
-        user_uploaded_file=saved_file_path
+    # ✅ PROPER ASYNC BRIDGE
+    status, response = asyncio.run(
+        get_ai_response(
+            user_id=user_id,
+            user_input=user_input,
+            user_uploaded_file=saved_file_path
+        )
     )
 
     if status:
-        print("AI response generated successfully")
-        
-      
-        socketio.emit("ai_response", {
-            "response": str(response),
-            "user_id": user_id
-        }, room=user_id)
-        
-      
+        socketio.emit(
+            "ai_response",
+            {"response": str(response), "user_id": user_id},
+            room=user_id
+        )
         return jsonify({"response": str(response)}), 200
-    else:
-        print("Failed to generate AI response")
-         
-        socketio.emit("error", {
-            "error": str(response),
-            "user_id": user_id
-        }, room=user_id)
-        return jsonify({"error": str(response)}), 500
+
+    socketio.emit(
+        "error",
+        {"error": str(response), "user_id": user_id},
+        room=user_id
+    )
+    return jsonify({"error": str(response)}), 500
 
 
- 
-       
 
 @socketio.on("/chat/v1/ai/stream-chat") 
 def stream_chat(data):
@@ -365,6 +363,6 @@ def download_file(filename):
 
 
 if __name__ == "__main__":
-    monitor_thread = threading.Thread(target=monitor_reminders, daemon=True)
-    monitor_thread.start()
+    # monitor_thread = threading.Thread(target=monitor_reminders, daemon=True)
+    # monitor_thread.start()
     socketio.run(app, debug=False,port=8001)

@@ -3,12 +3,42 @@ import { useNavigate } from "react-router-dom";
 import "./styles/dashboard.css";
 import Sidebar from "../components/menu";
 
-function Dashboard() {
+function ModernDashboard() {
   const [dashboardData, setDashboardData] = useState(null);
   const [userProfile, setUserProfile] = useState(null);
   const [loading, setLoading] = useState(true);
   const [error, setError] = useState(null);
   const navigate = useNavigate();
+
+  // Mock data for demonstration
+  const [appointments] = useState([
+    { id: 1, type: "doctor", title: "Annual Physical", time: "Tomorrow, 10:00 AM", icon: "👨‍⚕️" },
+    { id: 2, type: "lab", title: "Blood Work", time: "Dec 15, 2:30 PM", icon: "💉" },
+    { id: 3, type: "therapy", title: "Physical Therapy", time: "Dec 18, 4:00 PM", icon: "🧘‍♂️" }
+  ]);
+
+  const [healthMetrics] = useState([
+    { id: 1, name: "Heart Rate", value: "72", unit: "BPM", trend: "down", change: "-2", icon: "❤️" },
+    { id: 2, name: "Blood Pressure", value: "120/80", unit: "mmHg", trend: "stable", change: "0", icon: "🩸" },
+    { id: 3, name: "Sleep", value: "7h 30m", unit: "", trend: "up", change: "+45m", icon: "😴" },
+    { id: 4, name: "Steps", value: "8,542", unit: "", trend: "up", change: "+12%", icon: "👣" }
+  ]);
+
+  const [recentActivities] = useState([
+    { id: 1, action: "Medication reminder completed", time: "2 hours ago", icon: "💊" },
+    { id: 2, action: "Updated health profile", time: "Yesterday", icon: "📝" },
+    { id: 3, action: "New lab results available", time: "2 days ago", icon: "📊" }
+  ]);
+
+  // Fix scrolling on mount
+  useEffect(() => {
+    // Enable scrolling for dashboard
+    document.body.classList.add('dashboard-page-active');
+    
+    return () => {
+      document.body.classList.remove('dashboard-page-active');
+    };
+  }, []);
 
   const getUserIdFromToken = () => {
     const token = localStorage.getItem("authToken");
@@ -95,11 +125,16 @@ function Dashboard() {
   }, []);
 
   const handleMapClick = () => {
-    navigate("/map_screen");
+    navigate("/map");
   };
 
   const formatTime = (timeString) => {
-    return new Date(timeString).toLocaleTimeString("en-US", {
+    const date = new Date(timeString);
+    return date.toLocaleDateString("en-US", {
+      month: "short",
+      day: "numeric",
+      year: "numeric",
+    }) + " • " + date.toLocaleTimeString("en-US", {
       hour: "2-digit",
       minute: "2-digit",
     });
@@ -112,11 +147,28 @@ function Dashboard() {
     return "Good evening";
   };
 
+  const getPriorityClass = (priority) => {
+    switch(priority?.toLowerCase()) {
+      case 'high': return 'priority-high';
+      case 'medium': return 'priority-medium';
+      case 'low': return 'priority-low';
+      default: return 'priority-low';
+    }
+  };
+
+  const getTrendIcon = (trend) => {
+    switch(trend) {
+      case 'up': return '↗';
+      case 'down': return '↘';
+      default: return '→';
+    }
+  };
+
   if (loading) {
     return (
-      <div className="dashboard-loading">
-        <div className="loading-spinner"></div>
-        <p>Loading</p>
+      <div className="dashboard-loading-elegant">
+        <div className="loading-spinner-elegant"></div>
+        <p style={{ color: 'var(--color-text-secondary)' }}>Loading your dashboard...</p>
       </div>
     );
   }
@@ -141,6 +193,12 @@ function Dashboard() {
       <div className="dashboard-error">
         <h3>No data available</h3>
         <p>Unable to load dashboard information</p>
+        <button
+          className="retry-button"
+          onClick={() => navigate("/login")}
+        >
+          Return to Login
+        </button>
       </div>
     );
   }
@@ -151,128 +209,140 @@ function Dashboard() {
   return (
     <>
       <Sidebar />
-      <div className="getstarted-root font-display dark">
-        <div
-          className="background-image-layer"
-          style={{
-            backgroundImage:
-              'url("https://lh3.googleusercontent.com/aida-public/AB6AXuDBsl5xKFUwyPrzFdU4NVm8dRNWS03SX5Grib5E2uh6fywyhhPB6pZepud0U9EeYRkCiU15Z1kopdk14Ju2tv1dNFiTl4rGHhEmlI5VE6nk3A6sdtAQ_1cMrkyqcdf4NfkWlS5tUtvD8_K_DlUTxk6UUBY6xhKpHM17z_hlwp4y9-tpRBePXJ3XNIpPCu5z6b7yvpNUMi-sw8ZxqeyvFdWWjBATzolqDH7ngUxB4f3V-zv07xOnwS3-UsqHSeDMOdQ8z8nyjPvl26s")',
-          }}
-        ></div>
-
-        <div className="dashboard-container">
-
-          {/* TOP ROW */}
-          <div className="top-section">
-            <div className="health-tip-card">
-              <div className="tip-header">
-                <div className="tip-icon">💡</div>
-                <h3>Daily Health Tip</h3>
-              </div>
-              <div className="tip-content">
-                <div className="tip-category">
-                  {dashboard.health_tip_of_the_day.category.replace("_", " ")}
+      <div className="dashboard-elegant-root font-display dark">
+        <div className="dashboard-background-layer"></div>
+        <div className="dashboard-grid-overlay"></div>
+        
+        <div className="dashboard-elegant-container">
+          
+          {/* Welcome Section */}
+          <section className="dashboard-welcome-section">
+            <div className="welcome-header">
+              <h1 className="welcome-title">
+                {getGreeting()}, <span className="welcome-title-highlight">{username}!</span>
+              </h1>
+              <p className="welcome-subtitle">
+                Welcome to your health dashboard. Here's everything you need to know about your wellness journey.
+              </p>
+              <div className="welcome-meta">
+                <div className="meta-item">
+                  <span className="material-symbols-outlined meta-icon">update</span>
+                  <span>updated: {formatTime(dashboard.latest_time)}</span>
                 </div>
-                <p className="tip-text">{dashboard.health_tip_of_the_day.tip}</p>
-                <div className="tip-priority">
-                  <span
-                    className={`priority-badge ${dashboard.health_tip_of_the_day.priority}`}
+                <div className="meta-item">
+                  <span className="material-symbols-outlined meta-icon">location_on</span>
+                  <span>{dashboard.location || "Location not set"}</span>
+                </div>
+              </div>
+            </div>
+
+            {/* Stats Grid */}
+            <div className="dashboard-stats-grid">
+              <div className="stat-card-elegant">
+                <div className="stat-icon">
+                  <span className="material-symbols-outlined">folder</span>
+                </div>
+                <div className="stat-content">
+                  <div className="stat-title">Conversation with HealthcareAi</div>
+                  <div className="stat-value">{dashboard.total_charts}</div>
+                  <div className="stat-trend trend-positive">
+                    
+                  </div>
+                </div>
+              </div>
+
+              <div className="stat-card-elegant">
+                <div className="stat-icon">
+                  <span className="material-symbols-outlined">schedule</span>
+                </div>
+                <div className="stat-content">
+                  <div className="stat-title">Schedules</div>
+                  <div className="stat-value">{dashboard.number_of_schedules}</div>
+                  <div className="stat-trend trend-positive">
+                    
+                  </div>
+                </div>
+              </div>
+
+            </div>
+          </section>
+
+          {/* Main Content Grid */}
+          <div className="dashboard-main-grid">
+            {/* Left Column */}
+            <div className="dashboard-left-column">
+              {/* Health Tip Card */}
+              <div className="health-tip-elegant">
+                <div className="tip-header-elegant">
+                  <div className="tip-icon-container">
+                    <span className="material-symbols-outlined">lightbulb</span>
+                  </div>
+                  <h2 className="tip-title">Daily Health Insight</h2>
+                </div>
+                
+                <div className="tip-category-elegant">
+                  {dashboard.health_tip_of_the_day?.category?.replace("_", " ") || "General Wellness"}
+                </div>
+                
+                <p className="tip-content-elegant">
+                  {dashboard.health_tip_of_the_day?.tip || "Stay hydrated throughout the day for optimal body function."}
+                </p>
+                
+                <div className={`tip-priority-elegant ${getPriorityClass(dashboard.health_tip_of_the_day?.priority)}`}>
+                  <div className="priority-dot"></div>
+                  <span>{dashboard.health_tip_of_the_day?.priority || "low"} priority</span>
+                </div>
+              </div>
+
+              {/* Quick Actions */}
+              <div className="quick-actions-elegant">
+                <h2 className="actions-title">Quick Actions</h2>
+                <div className="actions-grid-elegant">
+                  <button 
+                    className="action-button-elegant"
+                    onClick={() => navigate("/home")}
+                    aria-label="Chat with healthcare AI"
                   >
-                    {dashboard.health_tip_of_the_day.priority} priority
-                  </span>
-                </div>
-              </div>
-            </div>
-
-            <div className="quick-actions">
-              <h3>Quick Actions</h3>
-              <div className="actions-grid">
-                <button className="action-btn" onClick={() => navigate("/chat")}>
-                  <span className="action-icon">💬</span>
-                  <span>Chat with Dr. Martin</span>
-                </button>
-                <button
-                  className="action-btn"
-                  onClick={() => navigate("/schedule")}
-                >
-                  <span className="action-icon">📅</span>
-                  <span>View Schedule</span>
-                </button>
-                <button
-                  className="action-btn"
-                  onClick={() => navigate("/documents")}
-                >
-                  <span className="action-icon">📁</span>
-                  <span>My Documents</span>
-                </button>
-                <button
-                  className="action-btn"
-                  onClick={() => navigate("/reports")}
-                >
-                  <span className="action-icon">📊</span>
-                  <span>Health Reports</span>
-                </button>
-              </div>
-            </div>
-          </div>
-
-          {/* MAIN CONTENT ROW */}
-          <div className="main-row">
-            <div className="welcome-section">
-              <div className="welcome-content">
-                <h1 className="welcome-greeting">
-                  {getGreeting()}, <span className="username-highlight">{username}!</span>
-                </h1>
-                <p className="welcome-subtitle">Here's your health overview.</p>
-                <div className="last-updated">
-                  Last updated: {formatTime(dashboard.latest_time)}
-                </div>
-                <br />
-              </div>
-
-              <div className="stats-grid">
-                <div className="stat-card">
-                  <div className="stat-content">
-                    <h3>Total Number of chart</h3>
-                    <p>{dashboard.total_charts}</p>
-                  </div>
-                </div>
-
-                <div className="stat-card">
-                  <div className="stat-content">
-                    <h3>location</h3>
-                    <p>{dashboard.location}</p>
-                  </div>
-                </div>
-
-                <div className="stat-card">
-                  <div className="stat-content">
-                    <h3>Active Schedules</h3>
-                    <p>{dashboard.number_of_schedules}</p>
-                  </div>
-                </div>
-              </div>
-            </div>
-
-            <div className="map-card" onClick={handleMapClick}>
-              <div className="map-background">
-                <div className="map-overlay">
-                  <div className="map-content">
-                    <div className="map-icon">
-                      <span className="material-symbols-outlined nav-icon">
-                        map
-                      </span>
+                    <div className="action-icon-elegant">
+                      <span className="material-symbols-outlined">chat</span>
                     </div>
-                    <h3>Healthcare Map</h3>
-                    <p>Find hospitals, clinics, and pharmacies near you</p>
-                    <div className="map-cta">
-                      <span>Explore Nearby Facilities →</span>
+                    <span className="action-text">Chat with HealthcareAI</span>
+                    <span className="material-symbols-outlined action-arrow">arrow_forward</span>
+                  </button>
+
+                  <button 
+                    className="action-button-elegant"
+                    onClick={() => navigate("/schedule")}
+                    aria-label="View appointments and schedule"
+                  >
+                    <div className="action-icon-elegant">
+                      <span className="material-symbols-outlined">calendar_month</span>
                     </div>
-                  </div>
+                    <span className="action-text">View Appointments</span>
+                    <span className="material-symbols-outlined action-arrow">arrow_forward</span>
+                  </button>
+ 
                 </div>
               </div>
             </div>
 
+            {/* Right Column - Map Card */}
+            <div className="map-card-elegant" onClick={handleMapClick} role="button" tabIndex={0}>
+              <div className="map-background-elegant"></div>
+              <div className="map-content-elegant">
+                <div className="map-icon-elegant">
+                  <span className="material-symbols-outlined">map</span>
+                </div>
+                <h3 className="map-title-elegant">Healthcare Navigator</h3>
+                <p className="map-description">
+                  Discover hospitals, clinics, and pharmacies near you with real-time availability and reviews.
+                </p>
+                <div className="map-cta-elegant">
+                  <span>Explore Nearby</span>
+                  <span className="material-symbols-outlined">arrow_forward</span>
+                </div>
+              </div>
+            </div>
           </div>
         </div>
       </div>
@@ -280,4 +350,4 @@ function Dashboard() {
   );
 }
 
-export default Dashboard;
+export default ModernDashboard;

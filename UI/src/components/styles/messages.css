@@ -152,6 +152,84 @@
   background: rgba(255, 255, 255, 0.05);
 }
 
+/* HTML Content Styling */
+.message-content-html {
+  font-size: 0.9rem;
+  line-height: 1.6;
+  word-wrap: break-word;
+  white-space: pre-wrap;
+}
+
+.message-paragraph {
+  margin: 0.5em 0;
+}
+
+.error-paragraph {
+  color: #d32f2f;
+}
+
+.dark .error-paragraph {
+  color: #f44336;
+}
+
+.message-image-container {
+  margin: 12px 0;
+  border-radius: 8px;
+  overflow: hidden;
+  max-width: 100%;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+}
+
+.message-image {
+  width: 100%;
+  height: auto;
+  display: block;
+  border-radius: 8px;
+}
+
+/* Message Link Styles */
+.message-link {
+  color: #4285f4;
+  text-decoration: none;
+  font-weight: 600;
+  padding: 2px 6px;
+  border-radius: 4px;
+  background: rgba(66, 133, 244, 0.1);
+  border: 1px solid rgba(66, 133, 244, 0.3);
+  transition: all 0.2s ease;
+  display: inline-block;
+  margin: 2px 0;
+}
+
+.dark .message-link {
+  color: #64b5f6;
+  background: rgba(100, 181, 246, 0.1);
+  border-color: rgba(100, 181, 246, 0.3);
+}
+
+.message-link:hover {
+  background: rgba(66, 133, 244, 0.2);
+  border-color: rgba(66, 133, 244, 0.5);
+  text-decoration: underline;
+  transform: translateY(-1px);
+}
+
+.dark .message-link:hover {
+  background: rgba(100, 181, 246, 0.2);
+  border-color: rgba(100, 181, 246, 0.5);
+}
+
+.user-message .message-link {
+  color: #ffffff;
+  background: rgba(255, 255, 255, 0.2);
+  border-color: rgba(255, 255, 255, 0.4);
+}
+
+.user-message .message-link:hover {
+  background: rgba(255, 255, 255, 0.3);
+  border-color: rgba(255, 255, 255, 0.6);
+}
+
 /* Copy Button Styling */
 .copy-button {
   position: absolute;
@@ -212,49 +290,6 @@
   font-weight: 500;
 }
 
-/* Message Link Styles */
-.message-link {
-  color: #4285f4;
-  text-decoration: none;
-  font-weight: 600;
-  padding: 2px 6px;
-  border-radius: 4px;
-  background: rgba(66, 133, 244, 0.1);
-  border: 1px solid rgba(66, 133, 244, 0.3);
-  transition: all 0.2s ease;
-  display: inline-block;
-  margin: 2px 0;
-}
-
-.dark .message-link {
-  color: #64b5f6;
-  background: rgba(100, 181, 246, 0.1);
-  border-color: rgba(100, 181, 246, 0.3);
-}
-
-.message-link:hover {
-  background: rgba(66, 133, 244, 0.2);
-  border-color: rgba(66, 133, 244, 0.5);
-  text-decoration: underline;
-  transform: translateY(-1px);
-}
-
-.dark .message-link:hover {
-  background: rgba(100, 181, 246, 0.2);
-  border-color: rgba(100, 181, 246, 0.5);
-}
-
-.user-message .message-link {
-  color: #ffffff;
-  background: rgba(255, 255, 255, 0.2);
-  border-color: rgba(255, 255, 255, 0.4);
-}
-
-.user-message .message-link:hover {
-  background: rgba(255, 255, 255, 0.3);
-  border-color: rgba(255, 255, 255, 0.6);
-}
-
 /* File Upload Message Styles */
 .file-upload-system-message .message-content {
   background: rgba(76, 175, 80, 0.1);
@@ -276,10 +311,9 @@
   border: 1px solid rgba(244, 67, 54, 0.2);
 }
 
-.message-text {
+.message-content-text {
   font-size: 0.9rem;
   line-height: 1.4;
-  margin-bottom: 0.25rem;
   word-wrap: break-word;
 }
 
@@ -300,6 +334,65 @@
 
 .dark .ai-message .message-time {
   color: var(--color-text-secondary-dark);
+}
+
+/* File Upload Message Components */
+.file-upload-message {
+  display: flex;
+  align-items: center;
+  gap: 0.75rem;
+}
+
+.file-upload-icon {
+  font-size: 1.2rem;
+}
+
+.file-upload-content {
+  flex: 1;
+}
+
+.file-upload-text {
+  font-size: 0.9rem;
+  font-weight: 500;
+}
+
+.file-upload-time {
+  font-size: 0.7rem;
+  opacity: 0.7;
+  margin-top: 0.25rem;
+}
+
+/* Download Message Components */
+.download-message {
+  display: flex;
+  align-items: center;
+  gap: 0.75rem;
+}
+
+.download-icon {
+  width: 24px;
+  height: 24px;
+  background: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24' fill='%234285f4'%3E%3Cpath d='M19 9h-4V3H9v6H5l7 7 7-7zM5 18v2h14v-2H5z'/%3E%3C/svg%3E") no-repeat center;
+  background-size: contain;
+}
+
+.dark .download-icon {
+  background: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24' fill='%2364b5f6'%3E%3Cpath d='M19 9h-4V3H9v6H5l7 7 7-7zM5 18v2h14v-2H5z'/%3E%3C/svg%3E") no-repeat center;
+  background-size: contain;
+}
+
+.download-content {
+  flex: 1;
+}
+
+.download-text {
+  font-size: 0.9rem;
+}
+
+.download-time {
+  font-size: 0.7rem;
+  opacity: 0.7;
+  margin-top: 0.25rem;
 }
 
 /* Animation */
@@ -328,7 +421,9 @@
     padding: 0.6rem 0.8rem;
   }
   
-  .markdown-content {
+  .markdown-content,
+  .message-content-html,
+  .message-content-text {
     font-size: 0.85rem;
   }
   
@@ -338,5 +433,9 @@
     right: 5px;
     padding: 3px 6px;
     font-size: 0.7rem;
+  }
+  
+  .message-image-container {
+    margin: 8px 0;
   }
 }
